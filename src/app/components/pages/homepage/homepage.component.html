@@ -1,0 +1,86 @@
+<header>
+  <section id="carouselBack">
+
+  </section>
+</header>
+<main>
+  <div class="container">
+    <div id="search&filter" class="row mb-3">
+      <div class="col-12 col-md-5 col-lg-6">
+        <label for="dropdownCity" id="labelCity" class="me-1">Eventos em: </label>
+        <button class="font-weight-bold px-0 btn border-none dropdown-toggle col-2" id="dropdownCity" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <strong>Cidades disponíveis</strong>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a routerLink="" class="dropdown-item">Cidades disponíveis</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a routerLink="/eventos/sp" style="text-decoration: none"><h6 class="dropdown-header">São Paulo</h6></a></li>
+          <li><a routerLink="/eventos/sp/$id" class="dropdown-item">Campos de Jordão</a></li>
+          <li><a routerLink="/eventos/sp/$id" class="dropdown-item">Guarulhos</a></li>
+          <li><a routerLink="/eventos/sp/$id" class="dropdown-item">São Caetano do Sul</a></li>
+          <li><a routerLink="/eventos/sp/$id" class="dropdown-item">São Paulo</a></li>
+          <li><a routerLink="/eventos/mg" style="text-decoration: none"><h6 class="dropdown-header">Minas Gerais</h6></a></li>
+          <li><a routerLink="/eventos/mg/$id" class="dropdown-item">Belo Horizonte</a></li>
+          <li><a routerLink="/eventos/rj" style="text-decoration: none"><h6 class="dropdown-header">Rio de Janeiro</h6></a></li>
+          <li><a routerLink="/eventos/rj/$id" class="dropdown-item">Rio de Janeiro</a></li>
+          <li><a routerLink="/eventos/rj/$id" class="dropdown-item">Teresopolis</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-7 col-lg-6">
+        <div role="group" class="input-group">
+          <input type="text" name="q" placeholder="Pesquisar Eventos por nome..." class="text-secondary form-control">
+          <div class="input-group-append">
+              <button type="submit" class="btn text-uppercase btn-primary">
+                  <svg data-v-110be863="" viewBox="0 0 16 16" width="1em" height="1em" focusable="false" role="img" aria-label="search" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi-search b-icon bi"><g data-v-110be863=""><path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"></path><path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"></path></g>
+                  </svg>
+              </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="gridEvents" class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4" *ngFor="let festa of festas">
+          <article *ngIf="festa.active" class="card border-0 d-flex align-items-center" style="width: 18rem;">
+            <img src="{{festa.imageURL}}" class="card-img-top" alt="{{festa.title}} Logo Image">
+            <div class="card-body">
+              <p>
+                <strong>{{festa.title}}</strong><br>
+                     {{festa.city}}<br>
+                <a routerLink="" class="card-text">Mais informações...</a>
+              </p>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card border-0" style="width: 18rem;">
+            <img src="../../../../assets/img/event2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p>
+                <strong>Ta tudo errado!</strong><br>
+                     Quinta, 26 de Novembro.<br>
+                <a routerLink="" class="card-text">Mais informações...</a>
+              </p>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card border-0 d-flex align-items-center" style="width: 18rem;">
+            <img src="../../../../assets/img/event3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card border-0" style="width: 18rem;">
+            <img src="../../../../assets/img/event4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+</main>
