@@ -1,7 +1,7 @@
 export class FestasModel {
-    items: Object[];
+    festas: Object[];
 
-    constructor(items: Object[]) {
-        this.items = items;
+    constructor(festas: Object[]) {
+        this.festas = festas;
     }
 }

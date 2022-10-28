@@ -8,7 +8,7 @@ import { FestasModel } from './festas-api.model';
 })
 export class FestasApiService {
 
-  dbUrl: string = "http://localhost:3000/items"
+  dbUrl: string = "http://localhost:3000/festas"
 
   constructor(private httpClient: HttpClient) { }
 

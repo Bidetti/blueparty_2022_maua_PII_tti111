@@ -37,6 +37,14 @@ export class HomePageComponent implements OnInit {
       console.log(this.festas);
   }
 
+  dayOfWeekAsString(date: number) {
+    let weekDay = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
+    return weekDay[new Date(date).getDay()];
+  }
 
-
+  dayandMonthAsString(date: number) {
+    let months = [ "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", 
+           "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro" ];
+    return `${new Date(date).getDate()} de ${months[new Date(date).getMonth()]}`;
+  }
 }

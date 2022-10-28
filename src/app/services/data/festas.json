@@ -1,16 +1,17 @@
 {
-  "items": [
+  "festas": [
     {
       "id": 1,
-      "title": "Item 1",
+      "title": "Dj Gbr - Halloween",
       "description": "This is item 1",
-      "date": "2023-01-01",
+      "date": "02/23/2022",
       "destaque": false,
       "time": {
         "start": "10:00",
         "end": "12:00"
       },
-      "city": "São Paulo",
+      "city": "São Paulo - SP",
+      "state": "SP",
       "place": "Rua 1",
       "tickets": [
         {
@@ -38,13 +39,14 @@
       "id": 2,
       "title": "Item 2",
       "description": "This is item 2",
-      "date": "2023-01-01",
+      "date": "09/25/2022",
       "destaque": true,
       "time": {
         "start": "10:00",
         "end": "12:00"
       },
       "city": "São Paulo",
+      "state": "SP",
       "place": "Rua 1",
       "tickets": [
         {
@@ -72,13 +74,14 @@
       "id": 3,
       "title": "Item 3",
       "description": "This is item 3",
-      "date": "2023-01-01",
+      "date": "06/24/2022",
       "destaque": false,
       "time": {
         "start": "10:00",
         "end": "12:00"
       },
       "city": "São Paulo",
+      "state": "SP",
       "place": "Rua 1",
       "tickets": [
         {

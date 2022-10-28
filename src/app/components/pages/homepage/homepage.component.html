@@ -41,45 +41,19 @@
   </div>
   <div id="gridEvents" class="container">
       <div class="row">
-        <div class="col-12 col-md-6 col-lg-4" *ngFor="let festa of festas">
-          <article *ngIf="festa.active" class="card border-0 d-flex align-items-center" style="width: 18rem;">
-            <img src="{{festa.imageURL}}" class="card-img-top" alt="{{festa.title}} Logo Image">
-            <div class="card-body">
-              <p>
-                <strong>{{festa.title}}</strong><br>
-                     {{festa.city}}<br>
-                <a routerLink="" class="card-text">Mais informações...</a>
-              </p>
-            </div>
-          </article>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <article class="card border-0" style="width: 18rem;">
-            <img src="../../../../assets/img/event2.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p>
-                <strong>Ta tudo errado!</strong><br>
-                     Quinta, 26 de Novembro.<br>
-                <a routerLink="" class="card-text">Mais informações...</a>
-              </p>
-            </div>
-          </article>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <article class="card border-0 d-flex align-items-center" style="width: 18rem;">
-            <img src="../../../../assets/img/event3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </article>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-          <article class="card border-0" style="width: 18rem;">
-            <img src="../../../../assets/img/event4.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </article>
+        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center" *ngFor="let festa of festas">
+          <a routerLink="/login" style="color: black; text-decoration: none;">
+            <article *ngIf="festa.active" class="card d-flex mb-3 card-hover" style="width: 18rem;">
+              <img src="{{festa.imageURL}}" class="card-img-top" alt="{{festa.title}} Logo Image">
+              <div class="card-body">
+                <p>
+                  <strong>{{festa.title}}</strong><br>
+                  {{dayOfWeekAsString(festa.date)}}, {{dayandMonthAsString(festa.date)}} - {{festa.state}}<br>
+                  <a routerLink="" class="card-text" style="color: #0500FF;">Mais informações...</a>
+                </p>
+              </div>
+            </article>
+          </a>
         </div>
       </div>
     </div>
