@@ -6,6 +6,7 @@ import { HomePageComponent } from './components/pages/homepage/homepage.componen
 import { LoginComponent } from './components/pages/service/login/login.component';
 import { RegisterComponent } from './components/pages/service/register/register.component';
 import { SobreNosComponent } from './components/pages/sobre-nos/sobre-nos.component';
+import { CadastroComponent } from './components/pages/service/cadastro/cadastro.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path: "register",
     component: RegisterComponent
+  },
+  {
+    path: "cadastro-evento",
+    component: CadastroComponent
   },
   {
     path: "**", pathMatch: "full",

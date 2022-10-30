@@ -13,6 +13,7 @@ import { ContatoComponent } from './components/pages/contato/contato.component';
 import { LoginComponent } from './components/pages/service/login/login.component';
 import { RegisterComponent } from './components/pages/service/register/register.component';
 import { PageNotFoundComponent } from './components/pages/page-not-found/page-not-found.component';
+import { CadastroComponent } from './components/pages/service/cadastro/cadastro.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { PageNotFoundComponent } from './components/pages/page-not-found/page-no
     ContatoComponent,
     LoginComponent,
     RegisterComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    CadastroComponent
   ],
   imports: [
     BrowserModule,

@@ -1,60 +1,96 @@
 <header>
-  <section id="carouselBack">
-
-  </section>
-</header>
-<main>
-  <div class="container">
-    <div id="search&filter" class="row mb-3">
-      <div class="col-12 col-md-5 col-lg-6">
-        <label for="dropdownCity" id="labelCity" class="me-1">Eventos em: </label>
-        <button class="font-weight-bold px-0 btn border-none dropdown-toggle col-2" id="dropdownCity" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <strong>Cidades disponíveis</strong>
-        </button>
-        <ul class="dropdown-menu">
-          <li><a routerLink="" class="dropdown-item">Cidades disponíveis</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a routerLink="/eventos/sp" style="text-decoration: none"><h6 class="dropdown-header">São Paulo</h6></a></li>
-          <li><a routerLink="/eventos/sp/$id" class="dropdown-item">Campos de Jordão</a></li>
-          <li><a routerLink="/eventos/sp/$id" class="dropdown-item">Guarulhos</a></li>
-          <li><a routerLink="/eventos/sp/$id" class="dropdown-item">São Caetano do Sul</a></li>
-          <li><a routerLink="/eventos/sp/$id" class="dropdown-item">São Paulo</a></li>
-          <li><a routerLink="/eventos/mg" style="text-decoration: none"><h6 class="dropdown-header">Minas Gerais</h6></a></li>
-          <li><a routerLink="/eventos/mg/$id" class="dropdown-item">Belo Horizonte</a></li>
-          <li><a routerLink="/eventos/rj" style="text-decoration: none"><h6 class="dropdown-header">Rio de Janeiro</h6></a></li>
-          <li><a routerLink="/eventos/rj/$id" class="dropdown-item">Rio de Janeiro</a></li>
-          <li><a routerLink="/eventos/rj/$id" class="dropdown-item">Teresopolis</a></li>
-        </ul>
-      </div>
-      <div class="col-12 col-md-7 col-lg-6">
-        <div role="group" class="input-group">
-          <input type="text" name="q" placeholder="Pesquisar Eventos por nome..." class="text-secondary form-control">
-          <div class="input-group-append">
-              <button type="submit" class="btn text-uppercase btn-primary">
-                  <svg data-v-110be863="" viewBox="0 0 16 16" width="1em" height="1em" focusable="false" role="img" aria-label="search" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi-search b-icon bi"><g data-v-110be863=""><path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"></path><path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"></path></g>
-                  </svg>
-              </button>
+  <section class="container mt-3 mb-2 mb-md-3 featuredEvents" *ngFor="let festa of festas">
+    <div class="carousel slide featuredEvent" data-bs-ride="carousel" data-bs-pause="hover" *ngIf="festa.destaque">
+      <ol class="carousel-indicators">
+        <li data-bs-target="#featuredEvent" data-bs-slide-to="0" class="rounded-circle bg-primary active" style="width: 10px; height: 10px;"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item bg-light active" data-bs-interval="10000">
+          <div class="row">
+            <div class="col-12 col-lg-8">
+              <a routerLink="/festa/{{festa.id}}">
+                <img src="{{festa.imageURL}}" class="d-block w-100 rounded-2" alt="Logo {{festa.title}}">
+              </a>
+            </div>
+            <div class="col-lg-4 text-center align-content-center flex-column">
+              <div class="carousel-agency mt-lg-5">
+                <img src="{{festa.agency.imageURL}}" class="align-items-center rounded-circle mt-3 mb-1" style="width: 30%; height: 30%;" alt="Logo {{festa.agency.name}}">
+                <p><strong>{{festa.agency.name}}</strong></p>
+                <br>
+                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#featuredEvent" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#featuredEvent" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Proximo</span>
+                </button> -->
+                <button class="btn btn-primary rounded-pill mt-3" routerLink="/festa/{{festa.id}}">Compre Agora</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div id="gridEvents" class="container">
-      <div class="row">
-        <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center" *ngFor="let festa of festas">
-          <a routerLink="/login" style="color: black; text-decoration: none;">
-            <article *ngIf="festa.active" class="card d-flex mb-3 card-hover" style="width: 18rem;">
-              <img src="{{festa.imageURL}}" class="card-img-top" alt="{{festa.title}} Logo Image">
-              <div class="card-body">
-                <p>
-                  <strong>{{festa.title}}</strong><br>
-                  {{dayOfWeekAsString(festa.date)}}, {{dayandMonthAsString(festa.date)}} - {{festa.state}}<br>
-                  <a routerLink="" class="card-text" style="color: #0500FF;">Mais informações...</a>
-                </p>
-              </div>
-            </article>
-          </a>
+  </section>
+</header>
+<main>
+  <section id="eventsField">
+    <!-- <div class="container">
+      <div id="search&filter" class="row mb-3">
+        <div class="col-12 col-md-5 col-lg-6">
+          <label for="dropdownCity" id="labelCity" class="me-1">Eventos em: </label>
+          <button class="font-weight-bold px-0 btn border-none dropdown-toggle col-2" id="dropdownCity" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <strong>Cidades disponíveis</strong>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a routerLink="" class="dropdown-item">Cidades disponíveis</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a routerLink="/eventos/sp" style="text-decoration: none"><h6 class="dropdown-header">São Paulo</h6></a></li>
+            <li><a routerLink="/eventos/sp/cj/$id" class="dropdown-item">Campos de Jordão</a></li>
+            <li><a routerLink="/eventos/sp/gru/$id" class="dropdown-item">Guarulhos</a></li>
+            <li><a routerLink="/eventos/sp/scs/$id" class="dropdown-item">São Caetano do Sul</a></li>
+            <li><a routerLink="/eventos/sp/sp/$id" class="dropdown-item">São Paulo</a></li>
+            <li><a routerLink="/eventos/mg" style="text-decoration: none"><h6 class="dropdown-header">Minas Gerais</h6></a></li>
+            <li><a routerLink="/eventos/mg/bh/$id" class="dropdown-item">Belo Horizonte</a></li>
+            <li><a routerLink="/eventos/rj" style="text-decoration: none"><h6 class="dropdown-header">Rio de Janeiro</h6></a></li>
+            <li><a routerLink="/eventos/rj/rj/$id" class="dropdown-item">Rio de Janeiro</a></li>
+            <li><a routerLink="/eventos/rj/ter/$id" class="dropdown-item">Teresopolis</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-7 col-lg-6">
+          <div role="group" class="input-group">
+            <input type="text" name="q" placeholder="Pesquisar Eventos por nome..." class="text-secondary form-control">
+            <div class="input-group-append">
+                <button type="submit" class="btn text-uppercase btn-primary">
+                    <svg data-v-110be863="" viewBox="0 0 16 16" width="1em" height="1em" focusable="false" role="img" aria-label="search" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi-search b-icon bi"><g data-v-110be863=""><path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"></path><path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"></path></g>
+                    </svg>
+                </button>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </div> -->
+    <h1 class="text-center mb-4">Eventos Disponíveis</h1>
+    <button class="btn btn-warning position-relative start-50 translate-middle" routerLink="/cadastro-evento">Cadastrar</button>
+    <hr class="border border-dark border-1 opacity-75 w-25 position-relative start-50 translate-middle">
+    <div id="gridEvents" class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center" *ngFor="let festa of festas">
+            <a routerLink="festa/{{festa.id}}" style="color: black; text-decoration: none;">
+              <article *ngIf="festa.active" class="card d-flex mb-3 card-hover" style="width: 18rem;">
+                <img src="{{festa.imageURL}}" class="card-img-top" alt="{{festa.title}} Logo Image">
+                <div class="card-body">
+                  <p>
+                    <strong>{{festa.title}}</strong><br>
+                    {{dayOfWeekAsString(festa.date)}}, {{dayandMonthAsString(festa.date)}} - {{festa.state}}<br>
+                    <a routerLink="festa/{{festa.id}}" class="card-text" style="color: #0500FF; text-decoration: none;">Mais informações...</a>
+                  </p>
+                </div>
+              </article>
+            </a>
+          </div>
+        </div>
+      </div>
+  </section>
 </main>

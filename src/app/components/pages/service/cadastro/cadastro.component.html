@@ -1,0 +1,52 @@
+<div class="container">
+    <form class="form row g-3">
+      <h1 class="text-uppercase text-center mt-5">Cadastro de Eventos</h1>
+      <div class="form-group col-12 col-md-6">
+        <label for="inputNEvento">Nome do Evento</label>
+        <input type="text" class="form-control" id="inputNEvento" placeholder="Exemplo: Pandora">
+      </div>
+      <div class="form-group col-12 col-md-6">
+        <label for="inputNAgencia">Nome da Agencia</label>
+        <input type="text" class="form-control" id="inputNAgencia" placeholder="Exemplo: CA MAUA">
+      </div>
+      <div class="form-group col-12 col-md-6">
+        <label for="inputBanner">Banner do Evento</label>
+        <input type="url" class="form-control" id="inputBanner" placeholder="Exemplo: https://imgur.com/lmrjpYX">
+      </div>
+      <div class="form-group col-12 col-md-6">
+        <label for="inputLogo">Logo da Agencia</label>
+        <input type="url" class="form-control" id="inputLogo" placeholder="Exemplo: https://imgur.com/OEluhmh">
+      </div>
+      <div class="form-group col-12 col-md-6">
+        <label for="inputData">Data do Evento</label>
+        <input type="date" class="form-control" id="inputData">
+      </div>
+      <div class="form-group col-12 col-md-6">
+        <label for="inputHora">Hora do Evento</label>
+        <input type="datetime-local" class="form-control" id="inputHora">
+      </div>
+      <div class="form-group col-12 col-md-6">
+        <label for="inputLocal">Local do Evento</label>
+        <input type="text" class="form-control" id="inputLocal" placeholder="Exemplo: Estadio Caninde">
+      </div>
+      <div class="form-group col-12 col-md-6">
+        <label for="selectCity">Cidade do Evento</label>
+        <select id="selectCity" name=""></select>
+      </div>
+      <div class="form-group col-12 col-md-6">
+        <label for="inputTipo">Tipo do Evento</label>
+        <select class="form-select" id="inputTipo">
+          <option>Selecione o tipo</option>
+          <option>Universitario</option>
+          <option>Evento +18</option>
+          <option>Evento -18</option>
+          <option>Outros</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="inputMensagem">Mensagem</label>
+        <textarea class="form-control" id="inputMensagem" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</div>

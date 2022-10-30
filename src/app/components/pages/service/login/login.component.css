@@ -1,14 +1,14 @@
 .gradient-custom-2 {
     /* fallback for old browsers */
     background: #cecece;
-    
+
     /* Chrome 10-25, Safari 5.1-6 */
     background: -webkit-linear-gradient(to left, #000000, #3f3f3f, #646464, #9c9c9c);
-    
+
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background: linear-gradient(to left, #000000, #3f3f3f, #646464, #9c9c9c);
     }
-    
+
     @media (min-width: 768px) {
     .gradient-form {
     height: 100vh !important;
@@ -22,5 +22,5 @@
     }
 
     #loginButton:hover {
-        
+
     }
