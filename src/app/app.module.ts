@@ -14,6 +14,7 @@ import { LoginComponent } from './components/pages/service/login/login.component
 import { RegisterComponent } from './components/pages/service/register/register.component';
 import { PageNotFoundComponent } from './components/pages/page-not-found/page-not-found.component';
 import { CadastroComponent } from './components/pages/service/cadastro/cadastro.component';
+import { EventoComponent } from './components/pages/evento/evento.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { CadastroComponent } from './components/pages/service/cadastro/cadastro.
     LoginComponent,
     RegisterComponent,
     PageNotFoundComponent,
-    CadastroComponent
+    CadastroComponent,
+    EventoComponent
   ],
   imports: [
     BrowserModule,

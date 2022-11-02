@@ -7,6 +7,7 @@ import { LoginComponent } from './components/pages/service/login/login.component
 import { RegisterComponent } from './components/pages/service/register/register.component';
 import { SobreNosComponent } from './components/pages/sobre-nos/sobre-nos.component';
 import { CadastroComponent } from './components/pages/service/cadastro/cadastro.component';
+import { EventoComponent } from './components/pages/evento/evento.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: "sobre-nos",
     component: SobreNosComponent
+  },
+  {
+    path: "evento/:id",
+    component: EventoComponent
   },
   {
     path: "contato",

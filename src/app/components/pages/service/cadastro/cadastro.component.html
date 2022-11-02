@@ -23,16 +23,71 @@
       </div>
       <div class="form-group col-12 col-md-6">
         <label for="inputHora">Hora do Evento</label>
-        <input type="datetime-local" class="form-control" id="inputHora">
+        <input type="time" class="form-control" id="inputHora">
       </div>
       <div class="form-group col-12 col-md-6">
         <label for="inputLocal">Local do Evento</label>
         <input type="text" class="form-control" id="inputLocal" placeholder="Exemplo: Estadio Caninde">
       </div>
       <div class="form-group col-12 col-md-6">
-        <label for="selectCity">Cidade do Evento</label>
-        <select id="selectCity" name=""></select>
+        <label for="selectState">Estado do Evento</label>
+        <select  id="selectState" class="form-select" placeholder="Exemplo: SP">
+          <option selected>Selecione o Estado</option>
+          <option value="1">SP</option>
+          <option value="2">RJ</option>
+          <option value="3">MG</option>
+          <option value="4">RS</option>
+          <option value="5">PR</option>
+          <option value="6">SC</option>
+          <option value="7">ES</option>
+          <option value="8">BA</option>
+          <option value="9">CE</option>
+          <option value="10">MA</option>
+          <option value="11">PA</option>
+          <option value="12">PE</option>
+          <option value="13">PI</option>
+          <option value="14">RN</option>
+          <option value="15">RO</option>
+          <option value="16">RR</option>
+          <option value="17">SE</option>
+          <option value="18">TO</option>
+          <option value="19">AC</option>
+          <option value="20">AL</option>
+          <option value="21">AM</option>
+          <option value="22">DF</option>
+          <option value="23">GO</option>
+          <option value="24">MT</option>
+          <option value="25">MS</option>
+          <option value="26">PB</option>
+        </select>
       </div>
+      <div class="form-group col-12 col-md-6">
+        <label for="selectCity">Cidade do Evento</label>
+        <select id="selectCity" class="form-select">
+          <option selected>Selecione a cidade</option>
+          <option value="1">São Paulo</option>
+          <option value="2">Campinas</option>
+          <option value="3">Mauá</option>
+          <option value="4">Santos</option>
+          <option value="5">Bauru</option>
+          <option value="6">São José dos Campos</option>
+          <option value="7">São Bernardo do Campo</option>
+          <option value="8">Rio de Janeiro</option>
+          <option value="9">Brasilia</option>
+          <option value="10">Belo Horizonte</option>
+          <option value="11">Florianopolis</option>
+          <option value="12">Curitiba</option>
+        </select>
+      </div>
+      <div class="form-group col-12 col-md-6">
+        <label for="inputValor">Valor do Ingresso</label>
+        <input type="number" class="form-control" id="inputValor" placeholder="Exemplo: 50">
+      </div>
+      <div class="form-group col-12 col-md-6">
+        <label for="inputQtd">Quantidade de Ingressos</label>
+        <input type="number" class="form-control" id="inputQtd" placeholder="Exemplo: 100">
+      </div>
+
       <div class="form-group col-12 col-md-6">
         <label for="inputTipo">Tipo do Evento</label>
         <select class="form-select" id="inputTipo">
@@ -43,9 +98,9 @@
           <option>Outros</option>
         </select>
       </div>
-      <div class="form-group">
-        <label for="inputMensagem">Mensagem</label>
-        <textarea class="form-control" id="inputMensagem" rows="3"></textarea>
+      <div class="form-group col-12 col-md-6">
+        <label for="inputDesc">Descrição do Evento</label>
+        <textarea class="form-control" id="inputDesc" rows="3"></textarea>
       </div>
       <button type="submit" class="btn btn-primary">Enviar</button>
     </form>

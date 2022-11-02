@@ -16,6 +16,10 @@ export class FestasApiService {
     return this.httpClient.get<FestasModel[]>(this.dbUrl);
   }
 
+  getDadosById(id: number): Observable<FestasModel> {
+    return this.httpClient.get<FestasModel>(`${this.dbUrl}/${id}`);
+  }
+
   putImages(id: number, body: any) {
     return this.httpClient
     .put(this.dbUrl + "/" + id, body)

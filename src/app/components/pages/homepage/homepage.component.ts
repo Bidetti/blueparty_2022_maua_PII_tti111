@@ -9,7 +9,6 @@ import { FestasApiService } from 'src/app/services/festas-api.service';
 export class HomePageComponent implements OnInit {
 
   public festas: any = [];
-  currentMovie = 0;
 
   constructor(private festasService: FestasApiService) { }
 
@@ -21,9 +20,9 @@ export class HomePageComponent implements OnInit {
     this.festasService.getDados().subscribe(
       (festas) => {
         festas.forEach((festa) => {
+          console.log(festa);
           this.festas.push(festa);
-
-          while(this.festas.length > 10) {
+          while(this.festas.length > 50) {
             this.festas.pop();
           }
           return;
@@ -34,7 +33,6 @@ export class HomePageComponent implements OnInit {
         //   return;
         // });
       });
-      console.log(this.festas);
   }
 
   dayOfWeekAsString(date: number) {
@@ -43,7 +41,7 @@ export class HomePageComponent implements OnInit {
   }
 
   dayandMonthAsString(date: number) {
-    let months = [ "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", 
+    let months = [ "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
            "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro" ];
     return `${new Date(date).getDate()} de ${months[new Date(date).getMonth()]}`;
   }

@@ -4,5 +4,5 @@ header {
 
 
 #carrinhoImage:hover {
-  content: url(../../../../assets/icons/cart-fill.svg);
+  content: url(/assets/icons/cart-fill.svg);
 }

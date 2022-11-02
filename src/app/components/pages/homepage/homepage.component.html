@@ -8,7 +8,7 @@
         <div class="carousel-item bg-light active" data-bs-interval="10000">
           <div class="row">
             <div class="col-12 col-lg-8">
-              <a routerLink="/festa/{{festa.id}}">
+              <a routerLink="/evento/{{festa.id}}">
                 <img src="{{festa.imageURL}}" class="d-block w-100 rounded-2" alt="Logo {{festa.title}}">
               </a>
             </div>
@@ -25,7 +25,7 @@
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Proximo</span>
                 </button> -->
-                <button class="btn btn-primary rounded-pill mt-3" routerLink="/festa/{{festa.id}}">Compre Agora</button>
+                <button class="btn btn-primary rounded-pill mt-3" routerLink="/evento/{{festa.id}}">Compre Agora</button>
               </div>
             </div>
           </div>
@@ -71,20 +71,20 @@
         </div>
       </div>
     </div> -->
-    <h1 class="text-center mb-4">Eventos Disponíveis</h1>
-    <button class="btn btn-warning position-relative start-50 translate-middle" routerLink="/cadastro-evento">Cadastrar</button>
+    <h1 class="text-center">Eventos Disponíveis</h1>
+    <!-- <button class="btn btn-warning position-relative start-50 translate-middle" routerLink="/cadastro-evento">Cadastrar</button> -->
     <hr class="border border-dark border-1 opacity-75 w-25 position-relative start-50 translate-middle">
     <div id="gridEvents" class="container">
         <div class="row">
           <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-center" *ngFor="let festa of festas">
-            <a routerLink="festa/{{festa.id}}" style="color: black; text-decoration: none;">
+            <a routerLink="evento/{{festa.id}}" style="color: black; text-decoration: none;">
               <article *ngIf="festa.active" class="card d-flex mb-3 card-hover" style="width: 18rem;">
                 <img src="{{festa.imageURL}}" class="card-img-top" alt="{{festa.title}} Logo Image">
                 <div class="card-body">
                   <p>
                     <strong>{{festa.title}}</strong><br>
                     {{dayOfWeekAsString(festa.date)}}, {{dayandMonthAsString(festa.date)}} - {{festa.state}}<br>
-                    <a routerLink="festa/{{festa.id}}" class="card-text" style="color: #0500FF; text-decoration: none;">Mais informações...</a>
+                    <a routerLink="evento/{{festa.id}}" class="card-text" style="color: #0500FF; text-decoration: none;">Mais informações...</a>
                   </p>
                 </div>
               </article>
