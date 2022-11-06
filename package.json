@@ -1,6 +1,8 @@
 {
   "name": "blueparty",
   "version": "0.0.0",
+  "description": "A simple node.js app for the Blue Party",
+  "author": "Bidetti",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

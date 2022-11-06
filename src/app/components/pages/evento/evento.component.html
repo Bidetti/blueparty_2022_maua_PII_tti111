@@ -4,10 +4,24 @@
       <div class="col-lg-8" ngClass="">
         <img src="{{specificParty.imageURL}}" class="mt-2 mb-2 rounded-3" alt="">
       </div>
-      <div class="col-lg-4 d-flex justify-content-center">
-        <img src="/assets/img/logo/agency/camaua.jpg" class="rounded-circle mt-3 ms-4" style="width: 35%; height: 35%;" alt=" Agency Logo">
-        <h1>{{specificParty.title}}</h1>
+      <div class="col-lg-4">
+        <div class="text-center">
+          <img src="/assets/img/logo/agency/camaua.jpg" class="rounded-circle mt-3 mb-2 w-25" alt=" Agency Logo">
+        </div>
+        <hr class="border border-dark border-1 opacity-75 w-50 position-relative start-50 translate-middle">
+        <h1 class="text-center">{{specificParty.title}}</h1>
+        <p class="text-center"><i class="fa fa-location-arrow me-2" aria-hidden="true"></i>{{specificParty.localization.name}}</p>
+        <p class="text-center"><i class="fa fa-calendar me-2" aria-hidden="true"></i>{{dayOfWeekAsString(specificParty.date)}}, {{dayandMonthAsString(specificParty.date)}} | {{specificParty.time.start}} - {{specificParty.time.end}}</p>
+        <p class="text-center"><i class="fa fa-compass me-2" aria-hidden="true"></i>{{specificParty.localization.address}} - {{specificParty.localization.cep}} | {{specificParty.localization.city}} - {{specificParty.localization.state}}</p>
       </div>
     </div>
   </div>
 </header>
+
+<main>
+  <div class="container">
+    <div class="col-12">
+
+    </div>
+  </div>
+</main>
