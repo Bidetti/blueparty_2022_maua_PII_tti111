@@ -20,6 +20,7 @@ export class EventoComponent implements OnInit {
   getFestas(id: number): void {
     this.festasService.getDadosById(id).subscribe(
       (festa) => {
+        console.log(festa);
         return this.specificParty = festa;
       });
   }

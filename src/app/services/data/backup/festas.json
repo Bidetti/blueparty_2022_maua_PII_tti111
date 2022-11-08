@@ -15,13 +15,14 @@
         "start": "10:00",
         "end": "12:00"
       },
-      "localization": {
-        "name": "1 BAR #@",
-        "address": "Rua 1",
-        "city": "São Paulo",
-        "state": "SP",
-        "country": "Brasil",
-        "cep": "092322-040"
+      "localization":
+      {
+          "name": "1 BAR #@",
+          "address": "Rua 1",
+          "city": "São Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "092322-040"
       },
       "tickets": [
         {
@@ -60,13 +61,14 @@
         "start": "10:00",
         "end": "12:00"
       },
-      "localization": {
-        "name": "1 BAR #@",
-        "address": "Rua 1",
-        "city": "São Paulo",
-        "state": "SP",
-        "country": "Brasil",
-        "cep": "092322-040"
+      "localization":
+      {
+          "name": "1 BAR #@",
+          "address": "Rua 1",
+          "city": "São Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "092322-040"
       },
       "tickets": [
         {
@@ -105,13 +107,14 @@
         "start": "10:00",
         "end": "12:00"
       },
-      "localization": {
-        "name": "1 BAR #@",
-        "address": "Rua 1",
-        "city": "São Paulo",
-        "state": "SP",
-        "country": "Brasil",
-        "cep": "092322-040"
+      "localization":
+      {
+          "name": "1 BAR #@",
+          "address": "Rua 1",
+          "city": "São Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "092322-040"
       },
       "tickets": [
         {
@@ -150,13 +153,14 @@
         "start": "10:00",
         "end": "12:00"
       },
-      "localization": {
-        "name": "1 BAR #@",
-        "address": "Rua 1",
-        "city": "São Paulo",
-        "state": "SP",
-        "country": "Brasil",
-        "cep": "092322-040"
+      "localization":
+      {
+          "name": "1 BAR #@",
+          "address": "Rua 1",
+          "city": "São Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "092322-040"
       },
       "tickets": [
         {
@@ -195,13 +199,14 @@
         "start": "10:00",
         "end": "12:00"
       },
-      "localization": {
-        "name": "1 BAR #@",
-        "address": "Rua 1",
-        "city": "São Paulo",
-        "state": "SP",
-        "country": "Brasil",
-        "cep": "092322-040"
+      "localization":
+      {
+          "name": "1 BAR #@",
+          "address": "Rua 1",
+          "city": "São Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "092322-040"
       },
       "tickets": [
         {
@@ -240,13 +245,14 @@
         "start": "23:00",
         "end": "05:00"
       },
-      "localization": {
-        "name": "PACA 333 ®",
-        "address": "Rua Pacaembu, 333",
-        "city": "São Bernardo do Campo",
-        "state": "SP",
-        "country": "Brasil",
-        "cep": "09692-040"
+      "localization":
+      {
+          "name": "PACA 333 ®",
+          "address": "Rua Pacaembu, 333",
+          "city": "São Bernardo do Campo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "09692-040"
       },
       "tickets": [
         {
@@ -285,13 +291,14 @@
         "start": "20:00",
         "end": "01:00"
       },
-      "localization": {
-        "name": "Espaço Anchieta",
-        "address": "Avenida Doutor Rudge Ramos, 1383",
-        "city": "São Bernardo do Campo",
-        "state": "SP",
-        "country": "Brasil",
-        "cep": "02713-000"
+      "localization":
+      {
+          "name": "Espaço Anchieta",
+          "address": "Avenida Doutor Rudge Ramos, 1383",
+          "city": "São Bernardo do Campo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "02713-000"
       },
       "tickets": [
         {
@@ -323,20 +330,22 @@
         "imageURL": "/assets/img/logo/agency/camaua.jpg"
       },
       "title": " HALLOWEEN DA ODONTO",
-      "description": "*Dj* *Comidas* Pizza Hot Dog Crepe salgado Doces Variados  Torta doce Foundue *Atrações* Correio elegante & Cadeia Fotografia",
+      "description":
+       "*Dj* *Comidas* Pizza Hot Dog Crepe salgado Doces Variados  Torta doce Foundue *Atrações* Correio elegante & Cadeia Fotografia",
       "date": "11/1/2022",
       "destaque": false,
       "time": {
         "start": "18:00",
         "end": "02:00"
       },
-      "localization": {
-        "name": "FUOUSP",
-        "address": "Avenida Professor Lineu Prestes, 2227",
-        "city": "São Paulo",
-        "state": "SP",
-        "country": "Brasil",
-        "cep": "02713-000"
+      "localization":
+      {
+          "name": "FUOUSP",
+          "address": "Avenida Professor Lineu Prestes, 2227",
+          "city": "São Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "02713-000"
       },
       "tickets": [
         {
@@ -375,13 +384,14 @@
         "start": "21:00",
         "end": "02:00"
       },
-      "localization": {
-        "name": "Double Deck",
-        "address": "Rua Alagoas, 836",
-        "city": "São Paulo",
-        "state": "SP",
-        "country": "Brasil",
-        "cep": "02713-000"
+      "localization":
+      {
+          "name": "Double Deck",
+          "address": "Rua Alagoas, 836",
+          "city": "São Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "02713-000"
       },
       "tickets": [
         {
@@ -420,13 +430,14 @@
         "start": "21:00",
         "end": "02:00"
       },
-      "localization": {
-        "name": "Espaço Anchieta",
-        "address": "Avenida Doutor Rudge Ramos, 1383",
-        "city": "São Bernardo do Campo",
-        "state": "SP",
-        "country": "Brasil",
-        "cep": "02713-000"
+      "localization":
+      {
+          "name": "Espaço Anchieta",
+          "address": "Avenida Doutor Rudge Ramos, 1383",
+          "city": "São Bernardo do Campo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "02713-000"
       },
       "tickets": [
         {
@@ -465,13 +476,14 @@
         "start": "20:00",
         "end": "03:00"
       },
-      "localization": {
-        "name": "Sociedade Rosas de Ouro",
-        "address": "Rua Coronel Euclides Machado, 1066",
-        "city": "São Paulo",
-        "state": "SP",
-        "country": "Brasil",
-        "cep": "02713-000"
+      "localization":
+      {
+          "name": "Sociedade Rosas de Ouro",
+          "address": "Rua Coronel Euclides Machado, 1066",
+          "city": "São Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "02713-000"
       },
       "tickets": [
         {
@@ -510,13 +522,14 @@
         "start": "19:00",
         "end": "03:00"
       },
-      "localization": {
-        "name": "CLUB A",
-        "address": "Alameda dos Aicás, 1642",
-        "city": "São Paulo",
-        "state": "SP",
-        "country": "Brasil",
-        "cep": "04086-003"
+      "localization":
+      {
+          "name": "CLUB A",
+          "address": "Alameda dos Aicás, 1642",
+          "city": "São Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "04086-003"
       },
       "tickets": [
         {
@@ -555,13 +568,14 @@
         "start": "22:00",
         "end": "05:00"
       },
-      "localization": {
-        "name": "Fonte Lounge",
-        "address": "Rua Tenório Cavalcanti, 123",
-        "city": "São Paulo",
-        "state": "SP",
-        "country": "Brasil",
-        "cep": "02842-220"
+      "localization":
+      {
+          "name": "Fonte Lounge",
+          "address": "Rua Tenório Cavalcanti, 123",
+          "city": "São Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "02842-220"
       },
       "tickets": [
         {
@@ -600,13 +614,14 @@
         "start": "22:00",
         "end": "04:00"
       },
-      "localization": {
-        "name": "Valonguinho",
-        "address": "Rua do Comércio, 72",
-        "city": "São Paulo",
-        "state": "SP",
-        "country": "Brasil",
-        "cep": "01010-001"
+      "localization":
+      {
+          "name": "Valonguinho",
+          "address": "Rua do Comércio, 72",
+          "city": "São Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "01010-001"
       },
       "tickets": [
         {
@@ -645,13 +660,14 @@
         "start": "16:00",
         "end": "22:00"
       },
-      "localization": {
-        "name": "Rep Diretoria,Rep Diretoria",
-        "address": "Rep Diretoria,Rep Diretoria",
-        "city": "São Paulo",
-        "state": "SP",
-        "country": "Brasil",
-        "cep": "12345-678"
+      "localization":
+      {
+          "name": "Rep Diretoria,Rep Diretoria",
+          "address": "Rep Diretoria,Rep Diretoria",
+          "city": "São Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "12345-678"
       },
       "tickets": [
         {
@@ -690,13 +706,14 @@
         "start": "12:00",
         "end": "21:00"
       },
-      "localization": {
-        "name": "Recanto Lua Nua",
-        "address": "Pousada Lua Nua Rodovia Rio Santos, Km 203,5",
-        "city": "São Paulo",
-        "state": "SP",
-        "country": "Brasil",
-        "cep": "12345-678"
+      "localization":
+      {
+          "name": "Recanto Lua Nua",
+          "address": "Pousada Lua Nua Rodovia Rio Santos, Km 203,5",
+          "city": "São Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "12345-678"
       },
       "tickets": [
         {
@@ -735,13 +752,14 @@
         "start": "22:00",
         "end": "05:00"
       },
-      "localization": {
-        "name": "Double Deck",
-        "address": "Rua Alagoas, 836",
-        "city": "São Paulo",
-        "state": "SP",
-        "country": "Brasil",
-        "cep": "12345-678"
+      "localization":
+      {
+          "name": "Double Deck",
+          "address": "Rua Alagoas, 836",
+          "city": "São Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "12345-678"
       },
       "tickets": [
         {
@@ -780,13 +798,14 @@
         "start": "23:00",
         "end": "06:00"
       },
-      "localization": {
-        "name": "G.R.E.S Acadêmicos do Tatuapé ",
-        "address": "R. Melo Peixoto, 1513",
-        "city": "Tatuapé",
-        "state": "SP",
-        "country": "Brasil",
-        "cep": "03314-030"
+      "localization":
+      {
+          "name": "G.R.E.S Acadêmicos do Tatuapé ",
+          "address": "R. Melo Peixoto, 1513",
+          "city": "Tatuapé",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "03314-030"
       },
       "tickets": [
         {
@@ -825,13 +844,14 @@
         "start": "23:00",
         "end": "04:00"
       },
-      "localization": {
-        "name": "Nocaute Bar",
-        "address": "Rua Augusta, 773",
-        "city": "São Paulo",
-        "state": "SP",
-        "country": "Brasil",
-        "cep": "01305-100"
+      "localization":
+      {
+          "name": "Nocaute Bar",
+          "address": "Rua Augusta, 773",
+          "city": "São Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "01305-100"
       },
       "tickets": [
         {
@@ -870,13 +890,14 @@
         "start": "18:00",
         "end": "02:00"
       },
-      "localization": {
-        "name": "Luminus Bar",
-        "address": "Rua Bissau, 50",
-        "city": "São Paulo",
-        "state": "SP",
-        "country": "Brasil",
-        "cep": "12345-678"
+      "localization":
+      {
+          "name": "Luminus Bar",
+          "address": "Rua Bissau, 50",
+          "city": "São Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "12345-678"
       },
       "tickets": [
         {
@@ -915,13 +936,14 @@
         "start": "20:00",
         "end": "02:00"
       },
-      "localization": {
-        "name": "Allianz Parque",
-        "address": "Rua Palestra Itália, 200",
-        "city": "São Paulo",
-        "state": "SP",
-        "country": "Brasil",
-        "cep": "05005-030"
+      "localization":
+      {
+          "name": "Allianz Parque",
+          "address": "Rua Palestra Itália, 200",
+          "city": "São Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "05005-030"
       },
       "tickets": [
         {

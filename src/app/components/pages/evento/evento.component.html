@@ -2,17 +2,16 @@
   <div class="container mt-5 border">
     <div class="row">
       <div class="col-lg-8" ngClass="">
-        <img src="{{specificParty.imageURL}}" class="mt-2 mb-2 rounded-3" alt="">
+        <img src="{{specificParty.imageURL}}" class="mt-2 mb-2 rounded-3 w-100" alt="">
       </div>
-      <div class="col-lg-4">
-        <div class="text-center">
-          <img src="/assets/img/logo/agency/camaua.jpg" class="rounded-circle mt-3 mb-2 w-25" alt=" Agency Logo">
-        </div>
+      <div class="col-lg-4 text-center">
+        <img src="/assets/img/logo/agency/camaua.jpg" class="rounded-circle mt-3 mb-2 w-25" alt=" Agency Logo">
         <hr class="border border-dark border-1 opacity-75 w-50 position-relative start-50 translate-middle">
-        <h1 class="text-center">{{specificParty.title}}</h1>
-        <p class="text-center"><i class="fa fa-location-arrow me-2" aria-hidden="true"></i>{{specificParty.localization.name}}</p>
-        <p class="text-center"><i class="fa fa-calendar me-2" aria-hidden="true"></i>{{dayOfWeekAsString(specificParty.date)}}, {{dayandMonthAsString(specificParty.date)}} | {{specificParty.time.start}} - {{specificParty.time.end}}</p>
-        <p class="text-center"><i class="fa fa-compass me-2" aria-hidden="true"></i>{{specificParty.localization.address}} - {{specificParty.localization.cep}} | {{specificParty.localization.city}} - {{specificParty.localization.state}}</p>
+        <h1>{{specificParty.title}}</h1>
+        <p><i class="fa fa-location-arrow me-2" aria-hidden="true"></i>{{specificParty.localization.name}}</p>
+        <p><i class="fa fa-calendar me-2" aria-hidden="true"></i>{{dayOfWeekAsString(specificParty.date)}}, {{dayandMonthAsString(specificParty.date)}} | {{specificParty.time.start}} - {{specificParty.time.end}}</p>
+        <p><i class="fa fa-compass me-2" aria-hidden="true"></i>{{specificParty.localization.address}} - {{specificParty.localization.cep}} | {{specificParty.localization.city}} - {{specificParty.localization.state}}</p>
+        <button class="btn btn-primary " onclick="document.getElementById(`ingresso`).scrollIntoView();">Comprar Ingressos</button>
       </div>
     </div>
   </div>
@@ -20,8 +19,27 @@
 
 <main>
   <div class="container">
-    <div class="col-12">
-
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-center mt-5">Descrição</h2>
+          <hr class="border border-dark border-1 opacity-75 w-50 position-relative start-50 translate-middle">
+          <p class="">{{specificParty.description}}</p>
+        </div>
+      </div>
+      <div class="row" id="ingresso">
+        <div class="col-12">
+          <h2 class="text-center mt-5">Ingressos</h2>
+          <hr class="border border-dark border-1 opacity-75 w-50 position-relative start-50 translate-middle">
+          <div class="row">
+            <div class="col-6 text-center" *ngFor="let ticket of specificParty.tickets">
+              <h4>{{ticket.name}}</h4>
+              <p>{{ticket.description}}</p>
+              <p>R$ {{ticket.price}}</p>
+              <p>Quantidade: {{ticket.quantity}} ingressos dispóniveis.</p>
+              <button class="btn btn-primary">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 </main>

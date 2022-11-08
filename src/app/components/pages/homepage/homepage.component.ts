@@ -20,7 +20,6 @@ export class HomePageComponent implements OnInit {
     this.festasService.getDados().subscribe(
       (festas) => {
         festas.forEach((festa) => {
-          console.log(festa);
           this.festas.push(festa);
           while(this.festas.length > 50) {
             this.festas.pop();

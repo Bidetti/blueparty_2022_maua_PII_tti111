@@ -15,6 +15,7 @@ import { RegisterComponent } from './components/pages/service/register/register.
 import { PageNotFoundComponent } from './components/pages/page-not-found/page-not-found.component';
 import { CadastroComponent } from './components/pages/service/cadastro/cadastro.component';
 import { EventoComponent } from './components/pages/evento/evento.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { EventoComponent } from './components/pages/evento/evento.component';
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
