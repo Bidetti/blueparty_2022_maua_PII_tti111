@@ -16,6 +16,7 @@ import { PageNotFoundComponent } from './components/pages/page-not-found/page-no
 import { CadastroComponent } from './components/pages/service/cadastro/cadastro.component';
 import { EventoComponent } from './components/pages/evento/evento.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { DashboardComponent } from './components/pages/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     RegisterComponent,
     PageNotFoundComponent,
     CadastroComponent,
-    EventoComponent
+    EventoComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

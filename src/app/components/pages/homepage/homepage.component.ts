@@ -9,6 +9,8 @@ import { FestasApiService } from 'src/app/services/festas-api.service';
 export class HomePageComponent implements OnInit {
 
   public festas: any = [];
+  public featuredCarousel: any = [];
+  public indexCarousel = 0;
 
   constructor(private festasService: FestasApiService) { }
 
@@ -20,17 +22,11 @@ export class HomePageComponent implements OnInit {
     this.festasService.getDados().subscribe(
       (festas) => {
         festas.forEach((festa) => {
-          this.festas.push(festa);
-          while(this.festas.length > 50) {
-            this.festas.pop();
+          if(this.festas.length < 50) {
+            this.festas.push(festa);
           }
-          return;
         });
-        // this.festas.forEach((festa: any) => {
-        //   console.log(festa);
-        //   this.festasService.putImages(festa.id, festa);
-        //   return;
-        // });
+        this.getFeaturedCarousel();
       });
   }
 
@@ -43,5 +39,18 @@ export class HomePageComponent implements OnInit {
     let months = [ "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
            "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro" ];
     return `${new Date(date).getDate()} de ${months[new Date(date).getMonth()]}`;
+  }
+
+  getFeaturedCarousel() {
+    for ( let i = 0; i < this.festas.length; i++) {
+      if (this.festas[i].destaque) {
+        this.featuredCarousel.push(this.festas[i]);
+      }
+    }
+  }
+
+  obterContador(){
+    this.indexCarousel++;
+    return this.indexCarousel;
   }
 }

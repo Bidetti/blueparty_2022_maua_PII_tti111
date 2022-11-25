@@ -1,31 +1,35 @@
 <header>
-  <section class="container mt-3 mb-2 mb-md-3 featuredEvents" *ngFor="let festa of festas">
-    <div class="carousel slide featuredEvent" data-bs-ride="carousel" data-bs-pause="hover" *ngIf="festa.destaque">
+  <section class="container mt-3 mb-2 mb-md-3 featuredEvents">
+    <div class="carousel slide featuredEvent" data-bs-ride="carousel" data-bs-pause="hover" >
       <ol class="carousel-indicators">
-        <li data-bs-target="#featuredEvent" data-bs-slide-to="0" class="rounded-circle bg-primary active" style="width: 10px; height: 10px;"></li>
+        <div class="" *ngFor="let festa of featuredCarousel; let i = index">
+            <li data-bs-target="#featuredEvent" class="rounded-circle bg-primary" style="width: 10px; height: 10px;"></li>
+        </div>
       </ol>
       <div class="carousel-inner">
-        <div class="carousel-item bg-light active" data-bs-interval="10000">
-          <div class="row">
-            <div class="col-12 col-lg-8">
-              <a routerLink="/evento/{{festa.id}}">
-                <img src="{{festa.imageURL}}" class="d-block w-100 rounded-2" alt="Logo {{festa.title}}">
-              </a>
-            </div>
-            <div class="col-lg-4 text-center align-content-center flex-column">
-              <div class="carousel-agency mt-lg-5">
-                <img src="{{festa.agency.imageURL}}" class="align-items-center rounded-circle mt-3 mb-1" style="width: 30%; height: 30%;" alt="Logo {{festa.agency.name}}">
-                <p><strong>{{festa.agency.name}}</strong></p>
-                <br>
-                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#featuredEvent" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#featuredEvent" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Proximo</span>
-                </button> -->
-                <button class="btn btn-primary rounded-pill mt-3" routerLink="/evento/{{festa.id}}">Compre Agora</button>
+        <div class="" *ngFor="let festa of featuredCarousel">
+          <div class="carousel-item bg-light active" data-bs-interval="2000" *ngIf="festa.destaque" id="eventItem{{indexCarousel}}">
+            <div class="row">
+              <div class="col-12 col-lg-8">
+                <a routerLink="/evento/{{festa.id}}">
+                  <img src="{{festa.imageURL}}" class="d-block w-100 rounded-2" alt="Logo {{festa.title}}">
+                </a>
+              </div>
+              <div class="col-lg-4 text-center align-content-center flex-column">
+                <div class="carousel-agency mt-lg-5">
+                  <img src="{{festa.agency.imageURL}}" class="align-items-center rounded-circle mt-3 mb-1" style="width: 30%; height: 30%;" alt="Logo {{festa.agency.name}}">
+                  <p><strong>{{festa.agency.name}}</strong></p>
+                  <br>
+                  <!-- <button class="carousel-control-prev" type="button" data-bs-target="#featuredEvent" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#featuredEvent" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Proximo</span>
+                  </button> -->
+                  <button class="btn btn-primary rounded-pill mt-3" routerLink="/evento/{{festa.id}}">Compre Agora</button>
+                </div>
               </div>
             </div>
           </div>
