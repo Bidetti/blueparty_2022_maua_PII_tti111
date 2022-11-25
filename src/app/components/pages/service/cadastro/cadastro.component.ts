@@ -65,6 +65,7 @@ export class CadastroComponent implements OnInit {
       body: data
     })
     .then(response => response.json())
+    alert("Festa cadastrada com sucesso!")
   }
 
 
