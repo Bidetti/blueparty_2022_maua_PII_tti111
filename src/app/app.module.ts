@@ -17,6 +17,7 @@ import { CadastroComponent } from './components/pages/service/cadastro/cadastro.
 import { EventoComponent } from './components/pages/evento/evento.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DashboardComponent } from './components/pages/dashboard/dashboard.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { DashboardComponent } from './components/pages/dashboard/dashboard.compo
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

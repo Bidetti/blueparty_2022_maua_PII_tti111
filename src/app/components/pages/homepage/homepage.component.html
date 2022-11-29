@@ -1,5 +1,32 @@
 <header>
-  <section class="container mt-3 mb-2 mb-md-3 featuredEvents">
+  <div class="container fluid">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-center mt-3">Eventos em Destaque</h2>
+        <hr class="border border-dark border-1 opacity-75 w-25 position-relative start-50 translate-middle">
+        <carousel [interval]="intervalCarousel" [(activeSlide)]="indexCarousel" [noPause]="false" [isAnimated]="true" [showIndicators]="showIndicators">
+          <slide class="border rounded mb-2" *ngFor="let festa of featuredCarousel; let index=index">
+            <div class="row">
+              <div class="col-12 col-md-8 d-block">
+                <a routerLink="/evento/{{festa.id}}">
+                  <img src="{{festa.imageURL}}" class="mt-2 mb-2 ms-2 w-100 rounded-2" alt="Logo {{festa.title}}">
+                </a>
+              </div>
+              <div class="col-12 col-md-4 text-center align-content-center flex-column">
+                <div class="carousel-agency mt-lg-5">
+                  <img src="{{festa.agency.imageURL}}" class="align-items-center rounded-circle mt-4 mb-1 logo-agency" alt="Logo {{festa.agency.name}}">
+                  <p class="mt-1"><strong>{{festa.title}}</strong></p>
+                  <p><i class="fa fa-calendar me-2" aria-hidden="true"></i>{{dayOfWeekAsString(festa.date)}}, {{dayandMonthAsString(festa.date)}} | {{festa.time.start}} - {{festa.time.end}}</p>
+                  <button class="btn btn-primary rounded-pill mt-1 mb-3" routerLink="/evento/{{festa.id}}">Compre Agora</button>
+                </div>
+              </div>
+            </div>
+          </slide>
+        </carousel>
+      </div>
+    </div>
+  </div>
+  <!-- <section class="container mt-3 mb-2 mb-md-3 featuredEvents">
     <div class="carousel slide featuredEvent" data-bs-ride="carousel" data-bs-pause="hover" >
       <ol class="carousel-indicators">
         <div class="" *ngFor="let festa of featuredCarousel; let i = index">
@@ -20,14 +47,6 @@
                   <img src="{{festa.agency.imageURL}}" class="align-items-center rounded-circle mt-3 mb-1" style="width: 30%; height: 30%;" alt="Logo {{festa.agency.name}}">
                   <p><strong>{{festa.agency.name}}</strong></p>
                   <br>
-                  <!-- <button class="carousel-control-prev" type="button" data-bs-target="#featuredEvent" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#featuredEvent" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Proximo</span>
-                  </button> -->
                   <button class="btn btn-primary rounded-pill mt-3" routerLink="/evento/{{festa.id}}">Compre Agora</button>
                 </div>
               </div>
@@ -36,7 +55,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 </header>
 <main>
   <section id="eventsField">

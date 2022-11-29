@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FestasApiService } from 'src/app/services/festas-api.service';
 
+const mediaQuery = window.matchMedia('(max-width: 576px)');
+
 @Component({
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',
@@ -11,6 +13,8 @@ export class HomePageComponent implements OnInit {
   public festas: any = [];
   public featuredCarousel: any = [];
   public indexCarousel = 0;
+  public intervalCarousel = 4000;
+  public showIndicators = true;
 
   constructor(private festasService: FestasApiService) { }
 
@@ -49,8 +53,4 @@ export class HomePageComponent implements OnInit {
     }
   }
 
-  obterContador(){
-    this.indexCarousel++;
-    return this.indexCarousel;
-  }
 }

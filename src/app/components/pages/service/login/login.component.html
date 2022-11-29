@@ -15,25 +15,25 @@
                     </div>
 
                     <form>
-                      <p>Conecte-se em sua conta</p>
+                      <h5 class="text-center mb-2">Conecte-se em sua conta</h5>
 
-                      <div class="form-outline mb-4">
+                      <div class="form-outline mb-3">
                         <input type="email" id="loginField" class="form-control"
-                          placeholder="Email ou Telefone" />
+                          placeholder="Usuário" />
                       </div>
 
-                      <div class="form-outline mb-4">
+                      <div class="form-outline mb-1">
                         <input type="password" id="passwordField" class="form-control" placeholder="Senha"/>
                       </div>
-
-                      <div class="text-center pt-1 mb-2 pb-1">
-                        <button class="btn btn-success btn-block fa-lg mb-1" type="button" id="loginButton" routerLink="/cadastro-evento">Conectar</button>
-                        <br>
-                        <a class="text" routerLink="/forget-password">Esqueceu a senha?</a>
+                      <div class="d-flex align-items-center justify-content-center mb-4">
+                        <span class="ms-auto" style="text-decoration: underline;" routerLink="/forget-password">Esqueceu a senha?</span>
+                      </div>
+                      <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-primary btn-lg mb-3" type="button" id="loginButton" routerLink="/cadastro-evento"><i class="fa fa-sign-in" aria-hidden="true"></i> Conectar</button>
                       </div>
 
-                      <div class="d-flex align-items-center justify-content-center pb-4">
-                        <p class="mb-0 me-2"><a routerLink="/register">Não possui uma conta?</a></p>
+                      <div class="d-flex align-items-center justify-content-center">
+                        <span class="mb-0 me-2">Novo na BlueParty? <a class="cadastro-link" routerLink="/register">CADASTRA-SE</a></span>
                       </div>
 
                     </form>
@@ -43,7 +43,7 @@
                 <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
                   <div class="text-white px-3 py-4 p-md-5 mx-md-4">
                     <h4 class="mb-4">Nossa Missão</h4>
-                    <p class="small mb-0">Acreditamos que uma das coisas mais preciosas que  podemos carregar conosco
+                    <p>Acreditamos que uma das coisas mais preciosas que  podemos carregar conosco
                       durante nossas vidas são as experiêncais que criamos e com quem decidimos
                       construir nossas histórias. A plataforma nasceu deste desejo, conectando pessoas
                       á experiências. </p>
