@@ -1,31 +1,75 @@
-<form action="" class="row g-3">
-    <div class="col-md-6">
-        <label for="inputNome" class="form-label">Nome</label>
-        <input type="text" class="form-control" id="inputNome" required>
-    </div>
-    <div class="col-md-6">
-        <label for="inputEmail" class="form-label">Email</label>
-        <input type="email" class="form-control" id="inputEmail" required>
-    </div>
-    <div class="col-md-6">
-        <label for="inputTelefone" class="form-label">Telefone</label>
-        <input type="text" class="form-control" id="inputTelefone">
-    </div>
-    <div class="col-md-6">
-        <label for="inputAssunto" class="form-label">Assunto</label>
-        <select class="form-select" aria-label="Default select example" id="inputAssunto" required>
-            <option selected>Selecione o assunto</option>
-            <option value="1">Ajuda</option>
-            <option value="2">Sugestão</option>
-            <option value="3">Reclamação</option>
-            <option value="4">Outros</option>
-        </select>
-    </div>
-    <div class="col-12">
-        <label for="inputMensagem" class="form-label">Mensagem</label>
-        <textarea class="form-control" id="inputMensagem" rows="3" required></textarea>
-    </div>
-    <div class="col-12">
-        <button type="submit" class="btn btn-primary">Enviar</button>
-    </div>
-</form>
+
+
+    <form action="" class="row">
+
+
+
+        <div class="col-12" id="contato-header">
+                <h3 id="texto-contato-header"> Contato</h3>
+        </div>
+        
+        <div class="col-md-6 text-center mt-3" id="info-contato">
+            <h6 id="info-contato-fonte">Preencha os campos para enviar a sua mensagem.
+                <br>O nosso horário de atendimento é de segunda a sexta-feira das 9h as 22h e aos sábados das 11h as 22h.
+            </h6>
+        </div>
+
+        <div class="col-6">
+            
+                <div class="col-md-6 mt-2">
+                    <label for="inputNome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="inputNome" required>
+                </div>
+                <div class="col-md-6 mt-4">
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" required>
+                </div>
+
+                <div class="col-md-6 mt-4">
+                    <label for="inputTelefone" class="form-label">Telefone</label>
+                    <input type="text" class="form-control" id="inputTelefone">
+                </div>
+                <div class="col-md-6 mt-4">
+                    <label for="inputAssunto" class="form-label">Assunto</label>
+                    <select class="form-select" aria-label="Default select example" id="inputAssunto" required>
+                        <option selected>Selecione o assunto</option>
+                        <option value="1">Ajuda</option>
+                        <option value="2">Sugestão</option>
+                        <option value="3">Reclamação</option>
+                        <option value="4">Outros</option>
+                    </select>
+                </div>
+        
+                <label for="inputMensagem" class="form-label mt-4">Mensagem</label>
+                <textarea class="form-control" id="inputMensagem" rows="3" required></textarea>
+        
+                <div class="col-md-6 mt-3" id="footer-contato">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+        </div>
+
+        <div class="col-12 col-md-4 col-lg-3">
+
+            <div class="card card-payment w-100">
+
+                <div class="card-body text-center">
+
+                    <h5 class="text-uppercase mt-4 mb-4">Meios de atendimento</h5>
+                    <p>
+                        <a href="/contato" class="btn btn-primary mb-3 w-100" target="_blank"><i class="far fa-comment-alt mr-2"></i> Central de Atendimento</a>
+
+                        <a class="pasb bt-share-face" href="" target="_blank" rel="noopener external nofollow" id="icone-face">
+                            <img class="rounded" width="50" height="50" src="https://ayltoninacio.com.br/img/s/18w50.jpg" alt="Compartilhe no Facebook">
+                            </a>
+                    </p>
+                    <p>
+                        <a class="pasb bt-share-whatsapp" href="" target="_blank" rel="noopener external nofollow" id="icone-whats">
+                            <img class="rounded" width="50" height="50" src="https://ayltoninacio.com.br/img/s/20w50.jpg" alt="Compartilhe no WhatsApp">
+                            </a>
+                        </p>
+                        
+                </div>
+            </div>
+
+        </div>
+    </form>
