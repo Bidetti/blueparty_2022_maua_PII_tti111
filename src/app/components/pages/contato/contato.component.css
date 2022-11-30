@@ -28,7 +28,10 @@
 }
 
 #btn-enviar{
-    width:350px;
-    height: 40px;
-    margin-left: 30%;
+  width:350px;
+  height: 40px;
+}
+
+label {
+text-decoration: underline;
 }
