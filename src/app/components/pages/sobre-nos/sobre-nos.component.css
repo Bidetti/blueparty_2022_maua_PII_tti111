@@ -1,0 +1,42 @@
+
+header{
+    background-image:url("/assets/img/logo/site/fotoboa1.jpg");
+
+    height:80%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#about-us{
+    color: white;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 13%;
+}
+#texto{
+    
+    margin-top: 3%;
+    display: flex;
+    line-height: 1.6;
+    justify-content: center;
+    align-items: center;
+    font-size:22px;
+    font-weight: 600;
+}
+h5{
+    color: black;
+    letter-spacing: 3px;
+}
+
+#mission{
+    margin-top: 13%;
+
+}
+
+
+
+
