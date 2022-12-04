@@ -18,6 +18,8 @@ import { EventoComponent } from './components/pages/evento/evento.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DashboardComponent } from './components/pages/dashboard/dashboard.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { SidenavComponent } from './components/pages/dashboard/sidenav/sidenav.component';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
     PageNotFoundComponent,
     CadastroComponent,
     EventoComponent,
-    DashboardComponent
+    DashboardComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
