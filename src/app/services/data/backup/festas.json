@@ -1,0 +1,971 @@
+{
+  "festas": [
+    {
+      "id": 1,
+      "agency": {
+        "id": 1,
+        "name": "CA MAUA",
+        "imageURL": "/assets/img/logo/agency/camaua.jpg"
+      },
+      "title": "Baile do TETO",
+      "description": "This is item 1",
+      "date": "09/30/2022",
+      "destaque": false,
+      "time": {
+        "start": "10:00",
+        "end": "12:00"
+      },
+      "localization":
+      {
+          "name": "1 BAR #@",
+          "address": "Rua 1",
+          "city": "São Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "092322-040"
+      },
+      "tickets": [
+        {
+          "id": 1,
+          "name": "Pista",
+          "description": "Ingresso da Pista - Sem Open Bar",
+          "price": "75.00",
+          "quantity": "200",
+          "type": "normal"
+        },
+        {
+          "id": 2,
+          "name": "Camarote",
+          "description": "Ingresso do Camarote - Com Open Bar",
+          "price": "300.00",
+          "quantity": "30",
+          "type": "vip"
+        }
+      ],
+      "imageURL": "/assets/img/festas/event1.png",
+      "active": true,
+      "update": "2022-09-12T08:02:00"
+    },
+    {
+      "id": 2,
+      "agency": {
+        "id": 1,
+        "name": "CA MAUA",
+        "imageURL": "/assets/img/logo/agency/camaua.jpg"
+      },
+      "title": "Ta tudo Errado",
+      "description": "This is item 2",
+      "date": "09/29/2022",
+      "destaque": false,
+      "time": {
+        "start": "10:00",
+        "end": "12:00"
+      },
+      "localization":
+      {
+          "name": "1 BAR #@",
+          "address": "Rua 1",
+          "city": "São Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "092322-040"
+      },
+      "tickets": [
+        {
+          "id": 1,
+          "name": "Pista",
+          "description": "Ingresso da Pista - Sem Open Bar",
+          "price": "75.00",
+          "quantity": "200",
+          "type": "normal"
+        },
+        {
+          "id": 2,
+          "name": "Camarote",
+          "description": "Ingresso do Camarote - Com Open Bar",
+          "price": "300.00",
+          "quantity": "30",
+          "type": "vip"
+        }
+      ],
+      "imageURL": "/assets/img/festas/event2.png",
+      "active": true,
+      "update": "2022-09-12T08:02:00"
+    },
+    {
+      "id": 3,
+      "agency": {
+        "id": 1,
+        "name": "CA MAUA",
+        "imageURL": "/assets/img/logo/agency/camaua.jpg"
+      },
+      "title": "Sensual Hoos",
+      "description": "This is item 3",
+      "date": "09/28/2022",
+      "destaque": false,
+      "time": {
+        "start": "10:00",
+        "end": "12:00"
+      },
+      "localization":
+      {
+          "name": "1 BAR #@",
+          "address": "Rua 1",
+          "city": "São Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "092322-040"
+      },
+      "tickets": [
+        {
+          "id": 1,
+          "name": "Pista",
+          "description": "Ingresso da Pista - Sem Open Bar",
+          "price": "75.00",
+          "quantity": "200",
+          "type": "normal"
+        },
+        {
+          "id": 2,
+          "name": "Camarote",
+          "description": "Ingresso do Camarote - Com Open Bar",
+          "price": "300.00",
+          "quantity": "30",
+          "type": "vip"
+        }
+      ],
+      "imageURL": "/assets/img/festas/event3.jpg",
+      "active": true,
+      "update": "2022-09-12T08:11:00"
+    },
+    {
+      "id": 4,
+      "agency": {
+        "id": 1,
+        "name": "CA MAUA",
+        "imageURL": "/assets/img/logo/agency/camaua.jpg"
+      },
+      "title": "Deixa em Off x Festa do Chefe XV",
+      "description": "This is item 3",
+      "date": "09/30/2022",
+      "destaque": false,
+      "time": {
+        "start": "10:00",
+        "end": "12:00"
+      },
+      "localization":
+      {
+          "name": "1 BAR #@",
+          "address": "Rua 1",
+          "city": "São Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "092322-040"
+      },
+      "tickets": [
+        {
+          "id": 1,
+          "name": "Pista",
+          "description": "Ingresso da Pista - Sem Open Bar",
+          "price": "75.00",
+          "quantity": "200",
+          "type": "normal"
+        },
+        {
+          "id": 2,
+          "name": "Camarote",
+          "description": "Ingresso do Camarote - Com Open Bar",
+          "price": "300.00",
+          "quantity": "30",
+          "type": "vip"
+        }
+      ],
+      "imageURL": "/assets/img/festas/event4.jpg",
+      "active": true,
+      "update": "2022-09-12T08:11:00"
+    },
+    {
+      "id": 5,
+      "agency": {
+        "id": 1,
+        "name": "CA MAUA",
+        "imageURL": "/assets/img/logo/agency/camaua.jpg"
+      },
+      "title": "Embraza (COPA 2022)",
+      "description": "This is item 3",
+      "date": "09/30/2022",
+      "destaque": false,
+      "time": {
+        "start": "10:00",
+        "end": "12:00"
+      },
+      "localization":
+      {
+          "name": "1 BAR #@",
+          "address": "Rua 1",
+          "city": "São Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "092322-040"
+      },
+      "tickets": [
+        {
+          "id": 1,
+          "name": "Pista",
+          "description": "Ingresso da Pista - Sem Open Bar",
+          "price": "75.00",
+          "quantity": "200",
+          "type": "normal"
+        },
+        {
+          "id": 2,
+          "name": "Camarote",
+          "description": "Ingresso do Camarote - Com Open Bar",
+          "price": "300.00",
+          "quantity": "30",
+          "type": "vip"
+        }
+      ],
+      "imageURL": "/assets/img/festas/event5.jpg",
+      "active": true,
+      "update": "2022-09-12T08:11:00"
+    },
+    {
+      "id": 6,
+      "agency": {
+        "id": 1,
+        "name": "CA MAUA",
+        "imageURL": "/assets/img/logo/agency/camaua.jpg"
+      },
+      "title": " HALLOWEEN DO PACA",
+      "description": "Esse é o Halloween do PACA! A festa que assombra os quatro cantos de SP venha curtir ao som de DJ GBR, DJ MANDRAKE e mais!",
+      "date": "11/01/2022",
+      "destaque": false,
+      "time": {
+        "start": "23:00",
+        "end": "05:00"
+      },
+      "localization":
+      {
+          "name": "PACA 333 ®",
+          "address": "Rua Pacaembu, 333",
+          "city": "São Bernardo do Campo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "09692-040"
+      },
+      "tickets": [
+        {
+          "id": 1,
+          "name": "Pista",
+          "description": "Ingresso da Pista - Sem Open Bar",
+          "price": "75.00",
+          "quantity": "200",
+          "type": "normal"
+        },
+        {
+          "id": 2,
+          "name": "Camarote",
+          "description": "Ingresso do Camarote - Com Open Bar",
+          "price": "300.00",
+          "quantity": "30",
+          "type": "vip"
+        }
+      ],
+      "imageURL": "/assets/img/festas/event18.jpeg",
+      "active": true,
+      "update": "2022-09-12T08:11:00"
+    },
+    {
+      "id": 7,
+      "agency": {
+        "id": 1,
+        "name": "CA MAUA",
+        "imageURL": "/assets/img/logo/agency/camaua.jpg"
+      },
+      "title": "It's a Trap",
+      "description": "Do Trap ao Funk, nosso projeto Its a Trap esta de volta! Fabrica de hits, uma das atrações mais pedidas por vocês: Matuê! Pediram funk? DJ Boy comanda o baile!",
+      "date": "11/1/2022",
+      "destaque": false,
+      "time": {
+        "start": "20:00",
+        "end": "01:00"
+      },
+      "localization":
+      {
+          "name": "Espaço Anchieta",
+          "address": "Avenida Doutor Rudge Ramos, 1383",
+          "city": "São Bernardo do Campo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "02713-000"
+      },
+      "tickets": [
+        {
+          "id": 1,
+          "name": "Pista",
+          "description": "Ingresso da Pista - Sem Open Bar",
+          "price": "75.00",
+          "quantity": "200",
+          "type": "normal"
+        },
+        {
+          "id": 2,
+          "name": "Camarote",
+          "description": "Ingresso do Camarote - Com Open Bar",
+          "price": "300.00",
+          "quantity": "30",
+          "type": "vip"
+        }
+      ],
+      "imageURL": "/assets/img/festas/event20.jpeg",
+      "active": true,
+      "update": "2022-09-12T08:11:00"
+    },
+    {
+      "id": 8,
+      "agency": {
+        "id": 1,
+        "name": "CA MAUA",
+        "imageURL": "/assets/img/logo/agency/camaua.jpg"
+      },
+      "title": " HALLOWEEN DA ODONTO",
+      "description":
+       "*Dj* *Comidas* Pizza Hot Dog Crepe salgado Doces Variados  Torta doce Foundue *Atrações* Correio elegante & Cadeia Fotografia",
+      "date": "11/1/2022",
+      "destaque": false,
+      "time": {
+        "start": "18:00",
+        "end": "02:00"
+      },
+      "localization":
+      {
+          "name": "FUOUSP",
+          "address": "Avenida Professor Lineu Prestes, 2227",
+          "city": "São Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "02713-000"
+      },
+      "tickets": [
+        {
+          "id": 1,
+          "name": "Pista",
+          "description": "Ingresso da Pista - Sem Open Bar",
+          "price": "75.00",
+          "quantity": "200",
+          "type": "normal"
+        },
+        {
+          "id": 2,
+          "name": "Camarote",
+          "description": "Ingresso do Camarote - Com Open Bar",
+          "price": "300.00",
+          "quantity": "30",
+          "type": "vip"
+        }
+      ],
+      "imageURL": "/assets/img/festas/event16.jpeg",
+      "active": true,
+      "update": "2022-09-12T08:11:00"
+    },
+    {
+      "id": 9,
+      "agency": {
+        "id": 1,
+        "name": "CA MAUA",
+        "imageURL": "/assets/img/logo/agency/camaua.jpg"
+      },
+      "title": "BPM- OPEN BAR",
+      "description": "Venha curtir uma noite open bar com o melhor da musica eletrônica.Inaugurando nossa nova pista, B.P.M. é uma noite voltada ao universo da música eletrônica. Passando por varias vertentes, a experiência musical acompanha o BPM (batidas por minuto) no ritmo das nossas vidas.",
+      "date": "11/01/2022",
+      "destaque": false,
+      "time": {
+        "start": "21:00",
+        "end": "02:00"
+      },
+      "localization":
+      {
+          "name": "Double Deck",
+          "address": "Rua Alagoas, 836",
+          "city": "São Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "02713-000"
+      },
+      "tickets": [
+        {
+          "id": 1,
+          "name": "Pista",
+          "description": "Ingresso da Pista - Sem Open Bar",
+          "price": "75.00",
+          "quantity": "200",
+          "type": "normal"
+        },
+        {
+          "id": 2,
+          "name": "Camarote",
+          "description": "Ingresso do Camarote - Com Open Bar",
+          "price": "300.00",
+          "quantity": "30",
+          "type": "vip"
+        }
+      ],
+      "imageURL": "/assets/img/festas/event3.png",
+      "active": true,
+      "update": "2022-09-12T08:11:00"
+    },
+    {
+      "id": 10,
+      "agency": {
+        "id": 1,
+        "name": "CA MAUA",
+        "imageURL": "/assets/img/logo/agency/camaua.jpg"
+      },
+      "title": "SÃO BREJADA: Pré Jogos",
+      "description": "Vocês não imaginam o prazer que é um pré-jogos! Chegou a hora de vestir sua samba, pegar sua caneca, e viver a verdadeira CAAP EXPERIENCE.",
+      "date": "11/04/2022",
+      "destaque": false,
+      "time": {
+        "start": "21:00",
+        "end": "02:00"
+      },
+      "localization":
+      {
+          "name": "Espaço Anchieta",
+          "address": "Avenida Doutor Rudge Ramos, 1383",
+          "city": "São Bernardo do Campo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "02713-000"
+      },
+      "tickets": [
+        {
+          "id": 1,
+          "name": "Pista",
+          "description": "Ingresso da Pista - Sem Open Bar",
+          "price": "75.00",
+          "quantity": "200",
+          "type": "normal"
+        },
+        {
+          "id": 2,
+          "name": "Camarote",
+          "description": "Ingresso do Camarote - Com Open Bar",
+          "price": "300.00",
+          "quantity": "30",
+          "type": "vip"
+        }
+      ],
+      "imageURL": "/assets/img/festas/event8.jpg",
+      "active": true,
+      "update": "2022-09-12T08:11:00"
+    },
+    {
+      "id": 11,
+      "agency": {
+        "id": 1,
+        "name": "CA MAUA",
+        "imageURL": "/assets/img/logo/agency/camaua.jpg"
+      },
+      "title": "DIPORRE",
+      "description": "- ATRAÇÕES CONFIRMADAS  DJ Lucas SP DJ DS DJ Rody DJ Bruno Prado  DJ Sapienza DJ Dan Crespo + Atrações em breve",
+      "date": "11/05/2022",
+      "destaque": false,
+      "time": {
+        "start": "20:00",
+        "end": "03:00"
+      },
+      "localization":
+      {
+          "name": "Sociedade Rosas de Ouro",
+          "address": "Rua Coronel Euclides Machado, 1066",
+          "city": "São Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "02713-000"
+      },
+      "tickets": [
+        {
+          "id": 1,
+          "name": "Pista",
+          "description": "Ingresso da Pista - Sem Open Bar",
+          "price": "75.00",
+          "quantity": "200",
+          "type": "normal"
+        },
+        {
+          "id": 2,
+          "name": "Camarote",
+          "description": "Ingresso do Camarote - Com Open Bar",
+          "price": "300.00",
+          "quantity": "30",
+          "type": "vip"
+        }
+      ],
+      "imageURL": "/assets/img/festas/event15.jpeg",
+      "active": true,
+      "update": "2022-09-12T08:11:00"
+    },
+    {
+      "id": 12,
+      "agency": {
+        "id": 1,
+        "name": "CA MAUA",
+        "imageURL": "/assets/img/logo/agency/camaua.jpg"
+      },
+      "title": "HALLOWICKED: A NOITE DA BRUXARIA",
+      "description": "SE PREPARA porque chegou a festa de Halloween mais aguardada do ano com o melhor Line-up e open bar que você já viu! A NOITE EM QUE A BRUXARIA ROLA SOLTA!!!",
+      "date": "11/05/2022",
+      "destaque": false,
+      "time": {
+        "start": "19:00",
+        "end": "03:00"
+      },
+      "localization":
+      {
+          "name": "CLUB A",
+          "address": "Alameda dos Aicás, 1642",
+          "city": "São Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "04086-003"
+      },
+      "tickets": [
+        {
+          "id": 1,
+          "name": "Pista",
+          "description": "Ingresso da Pista - Sem Open Bar",
+          "price": "75.00",
+          "quantity": "200",
+          "type": "normal"
+        },
+        {
+          "id": 2,
+          "name": "Camarote",
+          "description": "Ingresso do Camarote - Com Open Bar",
+          "price": "300.00",
+          "quantity": "30",
+          "type": "vip"
+        }
+      ],
+      "imageURL": "/assets/img/festas/event9.jpg",
+      "active": true,
+      "update": "2022-09-12T08:11:00"
+    },
+    {
+      "id": 13,
+      "agency": {
+        "id": 1,
+        "name": "CA MAUA",
+        "imageURL": "/assets/img/logo/agency/camaua.jpg"
+      },
+      "title": "FESTA DO LIDER",
+      "description": "Mais uma edição da FESTA DO LÍDER Agora a coisa fico séria, e com muito prazer que apresentamos nosso próximo evento, essa vai parar a zona norte, então não perde tempo, já chama e reserve seu espaço, SE VOCÊ NÃO FOR, SO VOCÊ NÃO VAI ",
+      "date": "11/05/2022",
+      "destaque": false,
+      "time": {
+        "start": "22:00",
+        "end": "05:00"
+      },
+      "localization":
+      {
+          "name": "Fonte Lounge",
+          "address": "Rua Tenório Cavalcanti, 123",
+          "city": "São Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "02842-220"
+      },
+      "tickets": [
+        {
+          "id": 1,
+          "name": "Pista",
+          "description": "Ingresso da Pista - Sem Open Bar",
+          "price": "75.00",
+          "quantity": "200",
+          "type": "normal"
+        },
+        {
+          "id": 2,
+          "name": "Camarote",
+          "description": "Ingresso do Camarote - Com Open Bar",
+          "price": "300.00",
+          "quantity": "30",
+          "type": "vip"
+        }
+      ],
+      "imageURL": "/assets/img/festas/event10.jpg",
+      "active": true,
+      "update": "2022-09-12T08:11:00"
+    },
+    {
+      "id": 14,
+      "agency": {
+        "id": 1,
+        "name": "CA MAUA",
+        "imageURL": "/assets/img/logo/agency/camaua.jpg"
+      },
+      "title": "BIXOPADA 22",
+      "description": "A volta da Bixopada do E.T depois de tanto tempo distante da Terra. -Open Bar Cerveja Gummy Vodka Energético Água ",
+      "date": "11/05/2022",
+      "destaque": false,
+      "time": {
+        "start": "22:00",
+        "end": "04:00"
+      },
+      "localization":
+      {
+          "name": "Valonguinho",
+          "address": "Rua do Comércio, 72",
+          "city": "São Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "01010-001"
+      },
+      "tickets": [
+        {
+          "id": 1,
+          "name": "Pista",
+          "description": "Ingresso da Pista - Sem Open Bar",
+          "price": "75.00",
+          "quantity": "200",
+          "type": "normal"
+        },
+        {
+          "id": 2,
+          "name": "Camarote",
+          "description": "Ingresso do Camarote - Com Open Bar",
+          "price": "300.00",
+          "quantity": "30",
+          "type": "vip"
+        }
+      ],
+      "imageURL": "/assets/img/festas/event19.jpeg",
+      "active": true,
+      "update": "2022-09-12T08:11:00"
+    },
+    {
+      "id": 15,
+      "agency": {
+        "id": 1,
+        "name": "CA MAUA",
+        "imageURL": "/assets/img/logo/agency/camaua.jpg"
+      },
+      "title": "Hangover II - Pré Jogos",
+      "description": "Pra já ir naquele pique, a República Diretoria orgulhosamente tá lançando o esquenta pré jogos mais brabo do ANO!! Pela primeira vez no ano, a Diretoria abre as portas para o melhor furduncinho sorocabano em rep . Só não vai moscar porque o rolê será limitado e não adianta chorar se ficar de fora!!! O rolê vai ser no precinho, pra você aproveitar a volta as aulas do melhor jeito, com a melhor rep. ",
+      "date": "11/10/2022",
+      "destaque": false,
+      "time": {
+        "start": "16:00",
+        "end": "22:00"
+      },
+      "localization":
+      {
+          "name": "Rep Diretoria,Rep Diretoria",
+          "address": "Rep Diretoria,Rep Diretoria",
+          "city": "São Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "12345-678"
+      },
+      "tickets": [
+        {
+          "id": 1,
+          "name": "Pista",
+          "description": "Ingresso da Pista - Sem Open Bar",
+          "price": "75.00",
+          "quantity": "200",
+          "type": "normal"
+        },
+        {
+          "id": 2,
+          "name": "Camarote",
+          "description": "Ingresso do Camarote - Com Open Bar",
+          "price": "300.00",
+          "quantity": "30",
+          "type": "vip"
+        }
+      ],
+      "imageURL": "/assets/img/festas/event11.jpg",
+      "active": true,
+      "update": "2022-09-12T08:11:00"
+    },
+    {
+      "id": 16,
+      "agency": {
+        "id": 1,
+        "name": "CA MAUA",
+        "imageURL": "/assets/img/logo/agency/camaua.jpg"
+      },
+      "title": "FASM TXV Meio médico",
+      "description": "Preparem o chinelo e o protetor solar, dia 12/11/2022 tem meio médico na praia. Com destino ao Recanto Lua Nua, sairemos de São Paulo às 10h para aproveitar nosso meio médico do 12h às 21h . ",
+      "date": "11/12/2022",
+      "destaque": false,
+      "time": {
+        "start": "12:00",
+        "end": "21:00"
+      },
+      "localization":
+      {
+          "name": "Recanto Lua Nua",
+          "address": "Pousada Lua Nua Rodovia Rio Santos, Km 203,5",
+          "city": "São Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "12345-678"
+      },
+      "tickets": [
+        {
+          "id": 1,
+          "name": "Pista",
+          "description": "Ingresso da Pista - Sem Open Bar",
+          "price": "75.00",
+          "quantity": "200",
+          "type": "normal"
+        },
+        {
+          "id": 2,
+          "name": "Camarote",
+          "description": "Ingresso do Camarote - Com Open Bar",
+          "price": "300.00",
+          "quantity": "30",
+          "type": "vip"
+        }
+      ],
+      "imageURL": "/assets/img/festas/event7.jpg",
+      "active": true,
+      "update": "2022-09-12T08:11:00"
+    },
+    {
+      "id": 17,
+      "agency": {
+        "id": 1,
+        "name": "CA MAUA",
+        "imageURL": "/assets/img/logo/agency/camaua.jpg"
+      },
+      "title": "DUODECK PARTY",
+      "description": "Depois do sucesso da primeira edição, nós resolvemos fazer mais uma edição para trazer o melhor da música eletrônica para Higienópolis, fechamos a parceria com o Double Deck e nossa edição contará com open bar além do nosso time incrível de Djs, contamos com a presença de todos, para fazer SP tremer de novo. ",
+      "date": "11/14/2022",
+      "destaque": false,
+      "time": {
+        "start": "22:00",
+        "end": "05:00"
+      },
+      "localization":
+      {
+          "name": "Double Deck",
+          "address": "Rua Alagoas, 836",
+          "city": "São Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "12345-678"
+      },
+      "tickets": [
+        {
+          "id": 1,
+          "name": "Pista",
+          "description": "Ingresso da Pista - Sem Open Bar",
+          "price": "75.00",
+          "quantity": "200",
+          "type": "normal"
+        },
+        {
+          "id": 2,
+          "name": "Camarote",
+          "description": "Ingresso do Camarote - Com Open Bar",
+          "price": "300.00",
+          "quantity": "30",
+          "type": "vip"
+        }
+      ],
+      "imageURL": "/assets/img/festas/event12.jpg",
+      "active": true,
+      "update": "2022-09-12T08:11:00"
+    },
+    {
+      "id": 18,
+      "agency": {
+        "id": 1,
+        "name": "CA MAUA",
+        "imageURL": "/assets/img/logo/agency/camaua.jpg"
+      },
+      "title": "FESTOBS 18+: SEX EDUCATION",
+      "description": "Aprender vai ser mais divertido né? Para o dia 18/11 às 23h já separa aquele lookinho sexy e se prepara pro clímax que esse rolê vai proporcionar. Não tem como ficar de fora quando uma festa tem tudo de melhor, garanta seu ingresso aqui com a gente",
+      "date": "11/18/2022",
+      "destaque": false,
+      "time": {
+        "start": "23:00",
+        "end": "06:00"
+      },
+      "localization":
+      {
+          "name": "G.R.E.S Acadêmicos do Tatuapé ",
+          "address": "R. Melo Peixoto, 1513",
+          "city": "Tatuapé",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "03314-030"
+      },
+      "tickets": [
+        {
+          "id": 1,
+          "name": "Pista",
+          "description": "Ingresso da Pista - Sem Open Bar",
+          "price": "75.00",
+          "quantity": "200",
+          "type": "normal"
+        },
+        {
+          "id": 2,
+          "name": "Camarote",
+          "description": "Ingresso do Camarote - Com Open Bar",
+          "price": "300.00",
+          "quantity": "30",
+          "type": "vip"
+        }
+      ],
+      "imageURL": "/assets/img/festas/event17.jpeg",
+      "active": true,
+      "update": "2022-09-12T08:11:00"
+    },
+    {
+      "id": 19,
+      "agency": {
+        "id": 1,
+        "name": "CA MAUA",
+        "imageURL": "/assets/img/logo/agency/camaua.jpg"
+      },
+      "title": "OPEN THE COPA - DIA DE QATAR GERAL",
+      "description": "Você está sendo CONVOCADO a dar início ao maior campeonato do mundo 😎🔥Nosso time de craques já foi escalado para dar um show no palco e fazer o rolê que vai garantir o hexa!",
+      "date": "11/18/2022",
+      "destaque": false,
+      "time": {
+        "start": "23:00",
+        "end": "04:00"
+      },
+      "localization":
+      {
+          "name": "Nocaute Bar",
+          "address": "Rua Augusta, 773",
+          "city": "São Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "01305-100"
+      },
+      "tickets": [
+        {
+          "id": 1,
+          "name": "Pista",
+          "description": "Ingresso da Pista - Sem Open Bar",
+          "price": "75.00",
+          "quantity": "200",
+          "type": "normal"
+        },
+        {
+          "id": 2,
+          "name": "Camarote",
+          "description": "Ingresso do Camarote - Com Open Bar",
+          "price": "300.00",
+          "quantity": "30",
+          "type": "vip"
+        }
+      ],
+      "imageURL": "/assets/img/festas/event21.jpeg",
+      "active": true,
+      "update": "2022-09-12T08:11:00"
+    },
+    {
+      "id": 20,
+      "agency": {
+        "id": 1,
+        "name": "CA MAUA",
+        "imageURL": "/assets/img/logo/agency/camaua.jpg"
+      },
+      "title": " Baile do Rafinha",
+      "description": " DJ Blakes DJ Fb DJ Rafinha Duarte DJ Raul Roveri DJ Pedro Neves + PAREDÃO ",
+      "date": "11/19/2022",
+      "destaque": true,
+      "time": {
+        "start": "18:00",
+        "end": "02:00"
+      },
+      "localization":
+      {
+          "name": "Luminus Bar",
+          "address": "Rua Bissau, 50",
+          "city": "São Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "12345-678"
+      },
+      "tickets": [
+        {
+          "id": 1,
+          "name": "Pista",
+          "description": "Ingresso da Pista - Sem Open Bar",
+          "price": "75.00",
+          "quantity": "200",
+          "type": "normal"
+        },
+        {
+          "id": 2,
+          "name": "Camarote",
+          "description": "Ingresso do Camarote - Com Open Bar",
+          "price": "300.00",
+          "quantity": "30",
+          "type": "vip"
+        }
+      ],
+      "imageURL": "/assets/img/festas/event13.jpg",
+      "active": true,
+      "update": "2022-09-12T08:11:00"
+    },
+    {
+      "id": 21,
+      "agency": {
+        "id": 1,
+        "name": "CA MAUA",
+        "imageURL": "/assets/img/logo/agency/camaua.jpg"
+      },
+      "title": "FOREVER UNITED",
+      "description": "  O grupo pop global NOW UNITED que recentemente comemorou com seus milhões de fãs ao redor do mundo, 5 anos de carreira, acaba de anunciar que farão seu primeiro show em estádio, dia 19 de novembro no Allianz Parque em São Paulo. O show “Forever United” será um show inesquecível e emocionante, principalmente para Any Gabrielly que acaba de anunciar o início de sua carreira solo, sob o comando do criador do Now United Simon Fuller. ",
+      "date": "11/19/2022",
+      "destaque": false,
+      "time": {
+        "start": "20:00",
+        "end": "02:00"
+      },
+      "localization":
+      {
+          "name": "Allianz Parque",
+          "address": "Rua Palestra Itália, 200",
+          "city": "São Paulo",
+          "state": "SP",
+          "country": "Brasil",
+          "cep": "05005-030"
+      },
+      "tickets": [
+        {
+          "id": 1,
+          "name": "Pista",
+          "description": "Ingresso da Pista - Sem Open Bar",
+          "price": "75.00",
+          "quantity": "200",
+          "type": "normal"
+        },
+        {
+          "id": 2,
+          "name": "Camarote",
+          "description": "Ingresso do Camarote - Com Open Bar",
+          "price": "300.00",
+          "quantity": "30",
+          "type": "vip"
+        }
+      ],
+      "imageURL": "/assets/img/festas/event14.jpeg",
+      "active": true,
+      "update": "2022-09-12T08:11:00"
+    }
+  ]
+}

@@ -20,3 +20,32 @@
     transform: scale(1.05);
     transition: 0.8s;
 }
+
+:host ::ng-deep .carousel-control-next-icon, ::ng-deep .carousel-control-prev-icon {
+  background-image: none;
+}
+
+:host ::ng-deep .carousel-indicators button{
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  :host ::ng-deep .carousel-indicators button {
+    margin-bottom: 245px;
+    background-color: black;
+  }
+}
+
+.logo-agency {
+  width: 30% !important;
+  height: 30% !important;
+}
+
+@media screen and (max-width: 768px) {
+  .logo-agency{
+    width: 20% !important;
+    height: 20% !important;
+  }
+}

@@ -14,6 +14,13 @@ import { LoginComponent } from './components/pages/service/login/login.component
 import { RegisterComponent } from './components/pages/service/register/register.component';
 import { PageNotFoundComponent } from './components/pages/page-not-found/page-not-found.component';
 import { CadastroComponent } from './components/pages/service/cadastro/cadastro.component';
+import { EventoComponent } from './components/pages/evento/evento.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { DashboardComponent } from './components/pages/dashboard/dashboard.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { SidenavComponent } from './components/pages/dashboard/sidenav/sidenav.component';
+import { PagamentoComponent } from './components/pages/pagamento/pagamento.component';
+
 
 @NgModule({
   declarations: [
@@ -26,13 +33,19 @@ import { CadastroComponent } from './components/pages/service/cadastro/cadastro.
     LoginComponent,
     RegisterComponent,
     PageNotFoundComponent,
-    CadastroComponent
+    CadastroComponent,
+    EventoComponent,
+    DashboardComponent,
+    SidenavComponent,
+    PagamentoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
+    CarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

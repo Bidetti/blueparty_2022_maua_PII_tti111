@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FestasApiService } from 'src/app/services/festas-api.service';
 
+const mediaQuery = window.matchMedia('(max-width: 576px)');
+
 @Component({
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',
@@ -9,7 +11,10 @@ import { FestasApiService } from 'src/app/services/festas-api.service';
 export class HomePageComponent implements OnInit {
 
   public festas: any = [];
-  currentMovie = 0;
+  public featuredCarousel: any = [];
+  public indexCarousel = 0;
+  public intervalCarousel = 4000;
+  public showIndicators = true;
 
   constructor(private festasService: FestasApiService) { }
 
@@ -21,20 +26,12 @@ export class HomePageComponent implements OnInit {
     this.festasService.getDados().subscribe(
       (festas) => {
         festas.forEach((festa) => {
-          this.festas.push(festa);
-
-          while(this.festas.length > 10) {
-            this.festas.pop();
+          if(this.festas.length < 50) {
+            this.festas.push(festa);
           }
-          return;
         });
-        // this.festas.forEach((festa: any) => {
-        //   console.log(festa);
-        //   this.festasService.putImages(festa.id, festa);
-        //   return;
-        // });
+        this.getFeaturedCarousel();
       });
-      console.log(this.festas);
   }
 
   dayOfWeekAsString(date: number) {
@@ -43,8 +40,17 @@ export class HomePageComponent implements OnInit {
   }
 
   dayandMonthAsString(date: number) {
-    let months = [ "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", 
+    let months = [ "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
            "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro" ];
     return `${new Date(date).getDate()} de ${months[new Date(date).getMonth()]}`;
   }
+
+  getFeaturedCarousel() {
+    for ( let i = 0; i < this.festas.length; i++) {
+      if (this.festas[i].destaque) {
+        this.featuredCarousel.push(this.festas[i]);
+      }
+    }
+  }
+
 }

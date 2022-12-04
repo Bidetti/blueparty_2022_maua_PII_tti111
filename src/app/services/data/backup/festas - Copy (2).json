@@ -1,0 +1,444 @@
+{
+  "festas": [
+    {
+      "id": 1,
+      "agency": {
+        "id": 1,
+        "name": "CA MAUA",
+        "imageURL": "/assets/img/logo/agency/camaua.jpg"
+      },
+      "title": "Baile do TETO",
+      "description": "This is item 1",
+      "date": "09/30/2022",
+      "destaque": false,
+      "time": {
+        "start": "10:00",
+        "end": "12:00"
+      },
+      "city": "São Paulo - SP",
+      "state": "SP",
+      "place": "Rua 1",
+      "tickets": [
+        {
+          "id": 1,
+          "name": "Ticket 1",
+          "description": "This is ticket 1",
+          "price": "10.00",
+          "quantity": "1",
+          "type": "normal"
+        },
+        {
+          "id": 2,
+          "name": "Ticket 2",
+          "description": "This is ticket 2",
+          "price": "10.00",
+          "quantity": "1",
+          "type": "vip"
+        }
+      ],
+      "imageURL": "/assets/img/festas/event1.png",
+      "active": true,
+      "update": "2022-09-12T08:02:00"
+    },
+    {
+      "id": 2,
+      "agency": {
+        "id": 1,
+        "name": "CA MAUA",
+        "imageURL": "/assets/img/logo/agency/camaua.jpg"
+      },
+      "title": "Ta tudo Errado",
+      "description": "This is item 2",
+      "date": "09/29/2022",
+      "destaque": true,
+      "time": {
+        "start": "10:00",
+        "end": "12:00"
+      },
+      "city": "São Paulo",
+      "state": "SP",
+      "place": "Rua 1",
+      "tickets": [
+        {
+          "id": 1,
+          "name": "Ticket 1",
+          "description": "This is ticket 1",
+          "price": "10.00",
+          "quantity": "1",
+          "type": "normal"
+        },
+        {
+          "id": 2,
+          "name": "Ticket 2",
+          "description": "This is ticket 2",
+          "price": "10.00",
+          "quantity": "1",
+          "type": "vip"
+        }
+      ],
+      "imageURL": "/assets/img/festas/event2.png",
+      "active": true,
+      "update": "2022-09-12T08:02:00"
+    },
+    {
+      "id": 3,
+      "agency": {
+        "id": 1,
+        "name": "CA MAUA",
+        "imageURL": "/assets/img/logo/agency/camaua.jpg"
+      },
+      "title": "Sensual Hoos",
+      "description": "This is item 3",
+      "date": "09/28/2022",
+      "destaque": false,
+      "time": {
+        "start": "10:00",
+        "end": "12:00"
+      },
+      "city": "São Paulo",
+      "state": "SP",
+      "place": "Rua 1",
+      "tickets": [
+        {
+          "id": 1,
+          "name": "Ticket 1",
+          "description": "This is ticket 1",
+          "price": "10.00",
+          "quantity": "1",
+          "type": "normal"
+        },
+        {
+          "id": 2,
+          "name": "Ticket 2",
+          "description": "This is ticket 2",
+          "price": "10.00",
+          "quantity": "1",
+          "type": "vip"
+        }
+      ],
+      "imageURL": "/assets/img/festas/event3.jpg",
+      "active": true,
+      "update": "2022-09-12T08:11:00"
+    },
+    {
+      "id": 4,
+      "agency": {
+        "id": 1,
+        "name": "CA MAUA",
+        "imageURL": "/assets/img/logo/agency/camaua.jpg"
+      },
+      "title": "Deixa em Off x Festa do Chefe XV",
+      "description": "This is item 3",
+      "date": "09/30/2022",
+      "destaque": false,
+      "time": {
+        "start": "10:00",
+        "end": "12:00"
+      },
+      "city": "São Paulo",
+      "state": "SP",
+      "place": "Rua 1",
+      "tickets": [
+        {
+          "id": 1,
+          "name": "Ticket 1",
+          "description": "This is ticket 1",
+          "price": "10.00",
+          "quantity": "1",
+          "type": "normal"
+        },
+        {
+          "id": 2,
+          "name": "Ticket 2",
+          "description": "This is ticket 2",
+          "price": "10.00",
+          "quantity": "1",
+          "type": "vip"
+        }
+      ],
+      "imageURL": "/assets/img/festas/event4.jpg",
+      "active": true,
+      "update": "2022-09-12T08:11:00"
+    },
+    {
+      "id": 5,
+      "agency": {
+        "id": 1,
+        "name": "CA MAUA",
+        "imageURL": "/assets/img/logo/agency/camaua.jpg"
+      },
+      "title": "Embraza (COPA 2022)",
+      "description": "This is item 3",
+      "date": "09/30/2022",
+      "destaque": false,
+      "time": {
+        "start": "10:00",
+        "end": "12:00"
+      },
+      "city": "São Paulo",
+      "state": "SP",
+      "place": "Rua 1",
+      "tickets": [
+        {
+          "id": 1,
+          "name": "Ticket 1",
+          "description": "This is ticket 1",
+          "price": "10.00",
+          "quantity": "1",
+          "type": "normal"
+        },
+        {
+          "id": 2,
+          "name": "Ticket 2",
+          "description": "This is ticket 2",
+          "price": "10.00",
+          "quantity": "1",
+          "type": "vip"
+        }
+      ],
+      "imageURL": "/assets/img/festas/event5.jpg",
+      "active": true,
+      "update": "2022-09-12T08:11:00"
+    },
+    {
+      "id": 6,
+      "agency": {
+        "id": 1,
+        "name": "CA MAUA",
+        "imageURL": "/assets/img/logo/agency/camaua.jpg"
+      },
+      "title": " HALLOWEEN DO PACA",
+      "description": "This is item 3",
+      "date": "11/01/2022",
+      "destaque": false,
+      "time": {
+        "start": "23:00",
+        "end": "05:00"
+      },
+      "city": "São Paulo",
+      "state": "SP",
+      "place": "Rua Pacaembu, 333",
+      "tickets": [
+        {
+          "id": 1,
+          "name": "Ticket 1",
+          "description": "This is ticket 1",
+          "price": "10.00",
+          "quantity": "1",
+          "type": "normal"
+        },
+        {
+          "id": 2,
+          "name": "Ticket 2",
+          "description": "This is ticket 2",
+          "price": "10.00",
+          "quantity": "1",
+          "type": "vip"
+        }
+      ],
+      "imageURL": "/assets/img/festas/event18.jpeg",
+      "active": true,
+      "update": "2022-09-12T08:11:00"
+    },
+    {
+      "id": 7,
+      "agency": {
+        "id": 1,
+        "name": "CA MAUA",
+        "imageURL": "/assets/img/logo/agency/camaua.jpg"
+      },
+      "title": "It's a Trap",
+      "description": "This is item 3",
+      "date": "11/1/2022",
+      "destaque": false,
+      "time": {
+        "start": "20:00",
+        "end": "01:00"
+      },
+      "city": "São Paulo",
+      "state": "SP",
+      "place": "Avenida Doutor Rudge Ramos, 1383",
+      "tickets": [
+        {
+          "id": 1,
+          "name": "Ticket 1",
+          "description": "This is ticket 1",
+          "price": "10.00",
+          "quantity": "1",
+          "type": "normal"
+        },
+        {
+          "id": 2,
+          "name": "Ticket 2",
+          "description": "This is ticket 2",
+          "price": "10.00",
+          "quantity": "1",
+          "type": "vip"
+        }
+      ],
+      "imageURL": "/assets/img/festas/event20.jpeg",
+      "active": true,
+      "update": "2022-09-12T08:11:00"
+    },
+    {
+      "id": 8,
+      "agency": {
+        "id": 1,
+        "name": "CA MAUA",
+        "imageURL": "/assets/img/logo/agency/camaua.jpg"
+      },
+      "title": " HALLOWEEN DA ODONTO",
+      "description": "This is item 3",
+      "date": "11/1/2022",
+      "destaque": false,
+      "time": {
+        "start": "18:00",
+        "end": "02:00"
+      },
+      "city": "São Paulo",
+      "state": "SP",
+      "place": "Avenida Professor Lineu Prestes, 2227",
+      "tickets": [
+        {
+          "id": 1,
+          "name": "Ticket 1",
+          "description": "This is ticket 1",
+          "price": "10.00",
+          "quantity": "1",
+          "type": "normal"
+        },
+        {
+          "id": 2,
+          "name": "Ticket 2",
+          "description": "This is ticket 2",
+          "price": "10.00",
+          "quantity": "1",
+          "type": "vip"
+        }
+      ],
+      "imageURL": "/assets/img/festas/event16.jpeg",
+      "active": true,
+      "update": "2022-09-12T08:11:00"
+    },
+    {
+      "id": 9,
+      "agency": {
+        "id": 1,
+        "name": "CA MAUA",
+        "imageURL": "/assets/img/logo/agency/camaua.jpg"
+      },
+      "title": "SÃO BREJADA: Pré Jogos - CAAP UFABC",
+      "description": "This is item 3",
+      "date": "11/04/2022",
+      "destaque": false,
+      "time": {
+        "start": "21:00",
+        "end": "02:00"
+      },
+      "city": "São Paulo",
+      "state": "SP",
+      "place": "Avenida Doutor Rudge Ramos, 1383",
+      "tickets": [
+        {
+          "id": 1,
+          "name": "Ticket 1",
+          "description": "This is ticket 1",
+          "price": "10.00",
+          "quantity": "1",
+          "type": "normal"
+        },
+        {
+          "id": 2,
+          "name": "Ticket 2",
+          "description": "This is ticket 2",
+          "price": "10.00",
+          "quantity": "1",
+          "type": "vip"
+        }
+      ],
+      "imageURL": "/assets/img/festas/event8.jpg",
+      "active": true,
+      "update": "2022-09-12T08:11:00"
+    },
+    {
+      "id": 10,
+      "agency": {
+        "id": 1,
+        "name": "CA MAUA",
+        "imageURL": "/assets/img/logo/agency/camaua.jpg"
+      },
+      "title": "BPM- OPEN BAR",
+      "description": "This is item 3",
+      "date": "11/04/2022",
+      "destaque": false,
+      "time": {
+        "start": "21:00",
+        "end": "02:00"
+      },
+      "city": "São Paulo",
+      "state": "SP",
+      "place": "Rua Alagoas, 836",
+      "tickets": [
+        {
+          "id": 1,
+          "name": "Ticket 1",
+          "description": "This is ticket 1",
+          "price": "10.00",
+          "quantity": "1",
+          "type": "normal"
+        },
+        {
+          "id": 2,
+          "name": "Ticket 2",
+          "description": "This is ticket 2",
+          "price": "10.00",
+          "quantity": "1",
+          "type": "vip"
+        }
+      ],
+      "imageURL": "/assets/img/festas/event3.png",
+      "active": true,
+      "update": "2022-09-12T08:11:00"
+    },
+    {
+      "id": 11,
+      "agency": {
+        "id": 1,
+        "name": "CA MAUA",
+        "imageURL": "/assets/img/logo/agency/camaua.jpg"
+      },
+      "title": "BPM- OPEN BAR",
+      "description": "This is item 3",
+      "date": "11/04/2022",
+      "destaque": false,
+      "time": {
+        "start": "21:00",
+        "end": "02:00"
+      },
+      "city": "São Paulo",
+      "state": "SP",
+      "place": "Rua Alagoas, 836",
+      "tickets": [
+        {
+          "id": 1,
+          "name": "Ticket 1",
+          "description": "This is ticket 1",
+          "price": "10.00",
+          "quantity": "1",
+          "type": "normal"
+        },
+        {
+          "id": 2,
+          "name": "Ticket 2",
+          "description": "This is ticket 2",
+          "price": "10.00",
+          "quantity": "1",
+          "type": "vip"
+        }
+      ],
+      "imageURL": "/assets/img/festas/event3.png",
+      "active": true,
+      "update": "2022-09-12T08:11:00"
+    }
+  ]
+}

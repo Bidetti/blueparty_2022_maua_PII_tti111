@@ -7,6 +7,9 @@ import { LoginComponent } from './components/pages/service/login/login.component
 import { RegisterComponent } from './components/pages/service/register/register.component';
 import { SobreNosComponent } from './components/pages/sobre-nos/sobre-nos.component';
 import { CadastroComponent } from './components/pages/service/cadastro/cadastro.component';
+import { EventoComponent } from './components/pages/evento/evento.component';
+import { DashboardComponent } from './components/pages/dashboard/dashboard.component';
+import { PagamentoComponent } from './components/pages/pagamento/pagamento.component';
 
 const routes: Routes = [
   {
@@ -16,6 +19,10 @@ const routes: Routes = [
   {
     path: "sobre-nos",
     component: SobreNosComponent
+  },
+  {
+    path: "evento/:id",
+    component: EventoComponent
   },
   {
     path: "contato",
@@ -30,8 +37,16 @@ const routes: Routes = [
     component: RegisterComponent
   },
   {
-    path: "cadastro-evento",
+    path: "dashboard/criar-evento",
     component: CadastroComponent
+  },
+  {
+    path: "dashboard",
+    component: DashboardComponent
+  },
+  {
+    path: "pagamento",
+    component: PagamentoComponent
   },
   {
     path: "**", pathMatch: "full",

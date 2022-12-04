@@ -4,5 +4,22 @@ header {
 
 
 #carrinhoImage:hover {
-  content: url(../../../../assets/icons/cart-fill.svg);
+  content: url(/assets/icons/cart-fill.svg);
 }
+
+/* .nav-link:hover{
+  transform: scale(1.15);
+  transition: 0.8s;
+}
+
+.btn:hover{
+  transform: scale(1.09);
+  transition: 0.8s;
+  background-color: #0c3d88;
+}
+
+.dropdown-item:hover{
+  transform: scale(1.01);
+  transition: 0.8s;
+} */
+
