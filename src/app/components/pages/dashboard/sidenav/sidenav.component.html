@@ -1,15 +1,11 @@
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-2 mt-2">
-            <div class="list-group">
-                <span class="mb-2"></span>
-                <a *ngFor="let item of list_sidenav" [routerLink]="item.link" class="list-group-item list-group-item-action border-0" aria-current="true">
-                    <i class="{{item.icon}}" aria-hidden="true"></i> <span class="item-text">{{item.name}}</span>
-                </a>
-                <a routerlink="/" class="list-group-item list-group-item-action border-0 mb-2" aria-current="true">
-                    <i class="fa fa-sign-out" aria-hidden="true"></i> <span class="item-text">Sair</span>
-                </a>
-            </div>
-        </div>
-    </div>
+<div class="list-group mt-2">
+  <span class="mb-2"></span>
+  <img src="/assets/img/logo/site/logo3.gif" alt="Website Logo" width="64px" height="64px">
+  <hr class="border border-dark border-1 opacity-75 w-50 mt-2 mb-2">
+  <a *ngFor="let item of list_sidenav" [routerLink]="item.link" class="list-group-item list-group-item-action border-0" aria-current="true">
+    <i class="{{item.icon}}" aria-hidden="true"></i> <span class="item-text">{{item.name}}</span>
+  </a>
+  <a routerlink="/" class="list-group-item list-group-item-action border-0 mb-2" aria-current="true">
+    <i class="fa fa-sign-out" aria-hidden="true"></i> <span class="item-text">Sair</span>
+  </a>
 </div>

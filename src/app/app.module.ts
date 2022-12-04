@@ -19,6 +19,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { DashboardComponent } from './components/pages/dashboard/dashboard.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { SidenavComponent } from './components/pages/dashboard/sidenav/sidenav.component';
+import { PagamentoComponent } from './components/pages/pagamento/pagamento.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { SidenavComponent } from './components/pages/dashboard/sidenav/sidenav.c
     CadastroComponent,
     EventoComponent,
     DashboardComponent,
-    SidenavComponent
+    SidenavComponent,
+    PagamentoComponent
   ],
   imports: [
     BrowserModule,
