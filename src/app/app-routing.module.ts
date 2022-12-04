@@ -8,6 +8,7 @@ import { RegisterComponent } from './components/pages/service/register/register.
 import { SobreNosComponent } from './components/pages/sobre-nos/sobre-nos.component';
 import { CadastroComponent } from './components/pages/service/cadastro/cadastro.component';
 import { EventoComponent } from './components/pages/evento/evento.component';
+import { DashboardComponent } from './components/pages/dashboard/dashboard.component';
 
 const routes: Routes = [
   {
@@ -37,6 +38,10 @@ const routes: Routes = [
   {
     path: "cadastro-evento",
     component: CadastroComponent
+  },
+  {
+    path: "dashboard",
+    component: DashboardComponent
   },
   {
     path: "**", pathMatch: "full",

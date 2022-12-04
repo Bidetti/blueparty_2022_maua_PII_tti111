@@ -11,7 +11,7 @@
         <p><i class="fa fa-location-arrow me-2" aria-hidden="true"></i>{{specificParty.localization.name}}</p>
         <p><i class="fa fa-calendar me-2" aria-hidden="true"></i>{{dayOfWeekAsString(specificParty.date)}}, {{dayandMonthAsString(specificParty.date)}} | {{specificParty.time.start}} - {{specificParty.time.end}}</p>
         <p><i class="fa fa-compass me-2" aria-hidden="true"></i>{{specificParty.localization.address}} - {{specificParty.localization.cep}} | {{specificParty.localization.city}} - {{specificParty.localization.state}}</p>
-        <button class="btn btn-primary " onclick="document.getElementById(`ingresso`).scrollIntoView();">Comprar Ingressos</button>
+        <button class="btn btn-primary mb-2 mb-md-0" onclick="document.getElementById(`ingresso`).scrollIntoView();">Comprar Ingressos</button>
       </div>
     </div>
   </div>
@@ -23,7 +23,9 @@
         <div class="col-12">
           <h2 class="text-center mt-5">Descrição</h2>
           <hr class="border border-dark border-1 opacity-75 w-50 position-relative start-50 translate-middle">
-          <p class="">{{specificParty.description}}</p>
+          <div class="border rounded">
+            <p class="p-2">{{specificParty.description}}</p>
+          </div>
         </div>
       </div>
       <div class="row" id="ingresso">
@@ -32,11 +34,13 @@
           <hr class="border border-dark border-1 opacity-75 w-50 position-relative start-50 translate-middle">
           <div class="row">
             <div class="col-6 text-center" *ngFor="let ticket of specificParty.tickets">
-              <h4>{{ticket.name}}</h4>
-              <p>{{ticket.description}}</p>
-              <p>R$ {{ticket.price}}</p>
-              <p>Quantidade: {{ticket.quantity}} ingressos dispóniveis.</p>
-              <button class="btn btn-primary">Comprar</button>
+              <div class="border rounded me-2">
+                <h4>{{ticket.name}}</h4>
+                <p>{{ticket.description}}</p>
+                <p>R$ {{ticket.price}}</p>
+                <p>Quantidade: {{ticket.quantity}} ingressos dispóniveis.</p>
+                <button class="btn btn-primary mb-3">Comprar</button>
+              </div>
             </div>
           </div>
         </div>
