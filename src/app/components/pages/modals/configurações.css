@@ -1,0 +1,65 @@
+#modal{
+    display: flex;
+    margin-left: 300px;
+    margin-top: 300px;
+}
+h1{
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle-container{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+}
+
+.toggle{
+    width: 60px;
+    height: 35px;
+    border-radius: 40px;
+    background-color: #EBEBFB ;
+    display: inline-block;
+}
+
+.toggle-c{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transition: 300ms all ;
+    border: 1px solid #8C8CA4;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+input[type="checkbox"]:checked + div .toggle-c{
+    left:30px;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.togg-label{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type="text"]{
+    border-radius: 5px;
+}
+
+input[type="text"]:focus{
+    border-color: #0d6efd !important;
+}
+
