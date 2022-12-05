@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,} from '@angular/core';
 
 @Component({
   selector: 'app-sidenav',
@@ -11,7 +11,6 @@ export class SidenavComponent {
     { name: 'Perfil', icon: 'fa fa-user', link: '/dashboard/perfil', notifications: 2, typenotification: 'warning'},
     { name: 'Compras', icon: 'fa fa-shopping-cart', link: '/dashboard/compras', notifications: 1, typenotification: 'primary'},
     { name: 'Criar Evento', icon: 'fa fa-calendar', link: '/dashboard/criar-evento', notifications: 0, typenotification: 'secondary'},
-    { name: 'Estatísticas', icon: 'fa fa-line-chart', link: '/dashboard/estatisticas', notifications: 3, typenotification: 'primary'},
     { name: 'Configurações', icon: 'fa fa-cog', link: '/dashboard/configuracoes', notifications: 4, typenotification: 'danger'}
   ];
 }

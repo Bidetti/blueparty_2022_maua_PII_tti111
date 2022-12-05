@@ -39,7 +39,7 @@
                 <p>{{ticket.description}}</p>
                 <p>R$ {{ticket.price}}</p>
                 <p>Quantidade: {{ticket.quantity}} ingressos disponíveis.</p>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" attr.data-bs-target="#{{ticket.name}}Modal">
+                <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" attr.data-bs-target="#{{ticket.name}}Modal">
                   Comprar
                 </button>
                 <!--Modal-->
@@ -51,13 +51,13 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cancelar"></button>
                       </div>
                       <div class="modal-body text-start">
-                        <h5>Informações da Festa:</h5>
+                        <h4>Informações da Festa:</h4>
                         <p>
                           <strong>Festa: </strong>{{specificParty.title}}<br>
                           <strong>Local: </strong>{{specificParty.localization.name}}<br>
                           <strong>Data: </strong>{{dayOfWeekAsString(specificParty.date)}}, {{dayandMonthAsString(specificParty.date)}}<br>
                         </p>
-                        <h5>Informações do Ingresso:</h5>
+                        <h4>Informações do Ingresso:</h4>
                         <p>
                           <strong>Ingresso: </strong>{{ticket.name}}<br>
                           <strong>Preço: </strong>R$ {{ticket.price}}<br>

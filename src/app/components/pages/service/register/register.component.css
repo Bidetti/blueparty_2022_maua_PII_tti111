@@ -10,6 +10,10 @@
 }
 
 a {
+  cursor: pointer;
+}
+
+.login-to {
   font-size: 1rem;
   line-height: 1.125rem;
   font-weight: 700;

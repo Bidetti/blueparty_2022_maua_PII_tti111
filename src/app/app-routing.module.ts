@@ -6,7 +6,7 @@ import { HomePageComponent } from './components/pages/homepage/homepage.componen
 import { LoginComponent } from './components/pages/service/login/login.component';
 import { RegisterComponent } from './components/pages/service/register/register.component';
 import { SobreNosComponent } from './components/pages/sobre-nos/sobre-nos.component';
-import { CadastroComponent } from './components/pages/service/cadastro/cadastro.component';
+import { CadastroComponent } from './components/pages/dashboard/cadastro/cadastro.component';
 import { EventoComponent } from './components/pages/evento/evento.component';
 import { DashboardComponent } from './components/pages/dashboard/dashboard.component';
 import { PagamentoComponent } from './components/pages/pagamento/pagamento.component';

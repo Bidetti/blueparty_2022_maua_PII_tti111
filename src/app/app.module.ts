@@ -13,7 +13,7 @@ import { ContatoComponent } from './components/pages/contato/contato.component';
 import { LoginComponent } from './components/pages/service/login/login.component';
 import { RegisterComponent } from './components/pages/service/register/register.component';
 import { PageNotFoundComponent } from './components/pages/page-not-found/page-not-found.component';
-import { CadastroComponent } from './components/pages/service/cadastro/cadastro.component';
+import { CadastroComponent } from './components/pages/dashboard/cadastro/cadastro.component';
 import { EventoComponent } from './components/pages/evento/evento.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DashboardComponent } from './components/pages/dashboard/dashboard.component';

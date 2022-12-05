@@ -1,0 +1,132 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-2">
+      <header>
+          <app-sidenav></app-sidenav>
+      </header>
+    </div>
+    <div class="col-8">
+      <main>
+        <div class="container-fluid">
+            <form class="form row g-3" id="cadastroEventForm">
+              <h1 class="text-uppercase text-center mt-5">Criação de Eventos</h1>
+              <h3>Informações Básicas</h3>
+              <div class="form-group col-12 col-md-6">
+                <label for="inputNEvento">Nome do Evento</label>
+                <input type="text" class="form-control" id="inputNEvento" placeholder="Exemplo: Pandora" required>
+              </div>
+              <div class="form-group col-12 col-md-6">
+                <label for="inputBanner">Banner do Evento</label>
+                <input type="url" class="form-control" id="inputBanner" placeholder="Exemplo: https://imgur.com/lmrjpYX" required>
+              </div>
+              <div class="form-group col-12 col-md-6">
+                <label for="inputNAgencia">Nome da Agência</label>
+                <input type="text" class="form-control" id="inputNAgencia" placeholder="Exemplo: CA MAUA" required>
+              </div>
+              <div class="form-group col-12 col-md-6">
+                <label for="inputLogo">Logo da Agência</label>
+                <input type="url" class="form-control" id="inputLogo" placeholder="Exemplo: https://imgur.com/OEluhmh">
+              </div>
+              <div class="form-group col-12">
+                <label for="inputDesc">Descrição do Evento</label>
+                <textarea class="form-control" id="inputDesc" rows="4" required></textarea>
+              </div>
+              <h3>Localização e Calendário</h3>
+              <div class="form-group col-12 col-md-6">
+                <label for="inputData">Data do Evento</label>
+                <input type="date" class="form-control" id="inputData" required>
+              </div>
+              <div class="form-group col-12 col-md-6">
+                <label for="inputLName">Local do Evento</label>
+                <input type="text" class="form-control" id="inputLName" placeholder="Exemplo: Estadio Caninde" required>
+              </div>
+              <div class="form-group col-12 col-md-6">
+                <label for="inputSHora">Horário do início do Evento</label>
+                <input type="time" class="form-control" id="inputSHora" required>
+              </div>
+              <div class="form-group col-12 col-md-6">
+                <label for="inputEHora">Horário do fim do Evento</label>
+                <input type="time" class="form-control" id="inputEHora" required>
+              </div>
+              <div class="form-group col-12 col-md-6">
+                <label for="inputLocal">Endereço do Evento</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Exemplo: R. Comendador Nestor Pereira, 33" required>
+              </div>
+              <div class="form-group col-12 col-md-6">
+                <label for="inputCEP">CEP do Evento</label>
+                <input type="text" class="form-control" id="inputCEP" placeholder="Exemplo: 03034-070" required>
+              </div>
+              <div class="form-group col-12 col-md-6">
+                <label for="selectState">Estado do Evento</label>
+                <select  id="selectState" class="form-select" placeholder="Exemplo: SP" required>
+                  <option selected>Selecione o Estado</option>
+                  <option value="1">SP</option>
+                  <option value="2">RJ</option>
+                  <option value="3">MG</option>
+                  <option value="4">RS</option>
+                  <option value="5">PR</option>
+                  <option value="6">SC</option>
+                  <option value="7">ES</option>
+                  <option value="8">BA</option>
+                  <option value="9">CE</option>
+                  <option value="10">MA</option>
+                  <option value="11">PA</option>
+                  <option value="12">PE</option>
+                  <option value="13">PI</option>
+                  <option value="14">RN</option>
+                  <option value="15">RO</option>
+                  <option value="16">RR</option>
+                  <option value="17">SE</option>
+                  <option value="18">TO</option>
+                  <option value="19">AC</option>
+                  <option value="20">AL</option>
+                  <option value="21">AM</option>
+                  <option value="22">DF</option>
+                  <option value="23">GO</option>
+                  <option value="24">MT</option>
+                  <option value="25">MS</option>
+                  <option value="26">PB</option>
+                </select>
+              </div>
+              <div class="form-group col-12 col-md-6">
+                <label for="selectCity">Cidade do Evento</label>
+                <select id="selectCity" class="form-select" required>
+                  <option selected>Selecione a cidade</option>
+                  <option value="1">São Paulo</option>
+                  <option value="2">Campinas</option>
+                  <option value="3">Mauá</option>
+                  <option value="4">Santos</option>
+                  <option value="5">Bauru</option>
+                  <option value="6">São José dos Campos</option>
+                  <option value="7">São Bernardo do Campo</option>
+                  <option value="8">Rio de Janeiro</option>
+                  <option value="9">Brasilia</option>
+                  <option value="10">Belo Horizonte</option>
+                  <option value="11">Florianopolis</option>
+                  <option value="12">Curitiba</option>
+                </select>
+              </div>
+              <h3>Informações sobre os Ingressos</h3>
+              <div class="form-group col-12 col-md-6">
+                <label for="inputIName">Nome do Ingresso</label>
+                <input type="text" class="form-control" id="inputIName" placeholder="Exemplo: Pista" required>
+              </div>
+              <div class="form-group col-12 col-md-6">
+                <label for="inputIDesc">Descrição do Ingresso</label>
+                <textarea class="form-control" id="inputIDesc" rows="2" placeholder="Ingresso da Pista - Sem Open Bar"></textarea>
+              </div>
+              <div class="form-group col-12 col-md-6">
+                <label for="inputPreco">Preço do Ingresso</label>
+                <input type="number" class="form-control" id="inputPreco" placeholder="Exemplo: 50" required>
+              </div>
+              <div class="form-group col-12 col-md-6">
+                <label for="inputQtd">Quantidade de Ingressos</label>
+                <input type="number" class="form-control" id="inputQtd" placeholder="Exemplo: 100" required>
+              </div>
+              <button type="button" class="btn btn-primary mt-4" (click)="onSubmit()">Enviar</button>
+            </form>
+        </div>
+      </main>
+    </div>
+  </div>
+</div>

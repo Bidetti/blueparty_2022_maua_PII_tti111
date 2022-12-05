@@ -1,3 +1,63 @@
+<header>
+  <!-- Modal Termos-->
+<div class="modal fade" id="termsModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Compromisso do Usuário</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          O usuário se compromete a fazer uso adequado dos conteúdos e da informação que o BlueParty oferece no site e com caráter enunciativo, mas não limitativo: <br> <br>
+          A) Não se envolver em atividades que sejam ilegais ou contrárias à boa fé a à ordem pública; <br><br>
+          B) Não difundir propaganda ou conteúdo de natureza racista, xenofóbica, betano ou azar, qualquer tipo de pornografia ilegal, de apologia ao terrorismo ou contra os direitos humanos; <br> <br>
+          C) Não causar danos aos sistemas físicos (hardwares) e lógicos (softwares) do BlueParty, de seus fornecedores ou terceiros, para introduzir ou disseminar vírus informáticos ou quaisquer outros sistemas de hardware ou software que sejam capazes de causar danos anteriormente mencionados. <br>
+        </p>
+        <h6>Mais informações:</h6>
+        <p>
+          Esperemos que esteja esclarecido e, como mencionado anteriormente, se houver algo que você não tem certeza se precisa ou não, geralmente é mais seguro deixar os cookies ativados, caso interaja com um dos recursos que você usa em nosso site. <br>
+          <br><strong>Esta política é efetiva a partir de 3 Dezembro de 2022.</strong>
+        </p>
+
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Concordar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Modal Privacy-->
+  <div class="modal fade" id="privacyModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Política Privacidade</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <li class="mb-2">A sua privacidade é importante para nós. É política do BlueParty respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site BlueParty, e outros sites que possuímos e operamos.</li>
+          <li class="mb-2">Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço. Fazemo-lo por meios justos e legais, com o seu conhecimento e consentimento. Também informamos por que estamos coletando e como será usado.</li>
+          <li class="mb-2">Apenas retemos as informações coletadas pelo tempo necessário para fornecer o serviço solicitado. Quando armazenamos dados, protegemos dentro de meios comercialmente aceitáveis para evitar perdas e roubos, bem como acesso, divulgação, cópia, uso ou modificação não autorizados.</li>
+          <li class="mb-2">Todas as imagens foram retiradas de sites de eventos verídicos, para somente ser possível realizar testes com a plataforma e apresentar o projeto para a faculdade, respeitando sempre a legislação sobre os direitos autorais das imagens retidas para a apresentação. </li>
+          <li class="mb-2">Não compartilhamos informações de identificação pessoal publicamente ou com terceiros, exceto quando exigido por lei.</li>
+          <li class="mb-2">O nosso site pode ter links para sites externos que não são operados por nós. Esteja ciente de que não temos controle sobre o conteúdo e práticas desses sites e não podemos aceitar responsabilidade por suas respectivas políticas de privacidade.</li>
+          <li class="mb-2">Você é livre para recusar a nossa solicitação de informações pessoais, entendendo que talvez não possamos fornecer alguns dos serviços desejados.</li>
+          <li class="mb-2">O uso continuado de nosso site será considerado como aceitação de nossas práticas em torno de privacidade e informações pessoais. Se você tiver alguma dúvida sobre como lidamos com dados do usuário e informações pessoais, entre em contacto conosco.</li>
+          <p>
+            <br><strong>Esta política é efetiva a partir de 3 Dezembro de 2022.</strong>
+          </p>
+
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Concordar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
 <main>
   <section class="h-100 gradient-form" style="background-color: rgb(255, 255, 255);">
       <div class="container py-5 h-100">
@@ -5,7 +65,7 @@
           <div class="col-xl-10">
             <div class="card rounded-3 text-black">
               <div class="row g-0">
-                <div class="col-lg-6">
+                <div class="col-lg-7">
                   <div class="card-body p-md-5 mx-md-4">
 
                     <div class="text-center">
@@ -15,30 +75,33 @@
                     </div>
 
                     <form>
-                      <h5 class="text-center mb-2">Registre-se sua conta</h5>
+                      <h5 class="text-center mb-md-3">Registre-se sua conta</h5>
 
-                      <div class="form-outline mb-4">
+                      <div class="form-outline mb-md-2 mb-2">
                         <input type="email" id="userField" class="form-control"
                           placeholder="Usuário" />
                       </div>
 
-                      <div class="form-outline mb-4">
+                      <div class="form-outline mb-md-2 mb-2">
                         <input type="password" id="passwordField" class="form-control" placeholder="Senha"/>
                       </div>
 
-                      <div class="d-grid gap-2 col-6 mx-auto">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" required>
+                        <span style="font-size: 14px;">Li e estou de acordo com os <a class="terms" data-bs-toggle="modal" data-bs-target="#termsModal">Termos de Serviço</a> e <a class="terms" data-bs-toggle="modal" data-bs-target="#privacyModal">Política de Privacidade</a>.</span>
+                      </div>
+
+                      <div class="d-grid gap-2 col-6 mx-auto mt-md-4 mt-3">
                         <button class="btn btn-primary btn-lg mb-3" type="button" routerLink="/login" id="loginButton">Criar Conta</button>
                       </div>
 
-                      <div class="d-flex align-items-center justify-content-center pb-4">
-                        <span class="mb-0 me-2">Já possui conta? <a routerLink="/login">CONECTAR</a></span>
-                      </div>
-
                     </form>
-
+                    <div class="d-flex align-items-center justify-content-center pb-3">
+                      <span class="mb-0 me-2">Já possui conta? <a routerLink="/login" class="login-to">CONECTAR</a></span>
+                    </div>
                   </div>
                 </div>
-                <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+                <div class="col-lg-5 d-flex align-items-center gradient-custom-2 rounded">
                   <div class="text-white px-3 py-4 p-md-5 mx-md-4">
                     <h4 class="mb-4">Nossa Missão</h4>
                     <p>Acreditamos que uma das coisas mais preciosas que  podemos carregar conosco
