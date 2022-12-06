@@ -1,0 +1,82 @@
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" id="modal">
+        Perfil
+    </button>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Editar Perfil</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                <div>
+                    <input type="file" name="" id="file" accept="image/*">
+                    <label for="file" id="photo">Editar Foto
+                        <img src="new_photo.png" alt="icon" id="change">
+                    </label>
+                </div>    
+
+                    <div>
+                        <div>
+                            <label for="togg-1">
+                                <span>Nome de Usuario:</span>
+                                <input type="text" id="togg-1">
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="togg-2">
+                                <span>Email:</span>
+                                <input type="email" id="togg-2" placeholder="example@example.com">
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="togg-3">
+                                <span>Telefone:</span>
+                                <input type="text" id="togg-3" placeholder="(00)90000-0000">
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="togg-4">
+                                <span>Data de Nascimento:</span>
+                                <input type="text" id="togg-4" placeholder="00/00/0000">
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <span>Sexo:</span>
+                        <div>
+                            <label for="radio1" class="flex">
+                                <input type="radio" name="sex" id="radio1">
+                                <span>Masculino</span>
+                            </label>
+                        </div>
+                        <div>
+                            <label for="radio2" class="flex">
+                                <input type="radio" name="sex" id="radio2">
+                                <span>Feminino</span>
+                            </label>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            
+            </div>
+        </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,83 @@
+*{
+    outline: none;
+}
+
+#modal{
+    display: flex;
+    margin-left: 300px;
+    margin-top: 300px;
+}
+
+
+
+img{
+    width: 10%;
+    padding-bottom: 10px;
+}
+
+#change{
+    
+    height:30px;
+    width: 15%;
+    margin-left:-3%;
+}
+
+input[type="text"], input[type="email"]{
+    display: block;
+    box-sizing: border-box;
+    background: none;
+    color: #3498db;
+    margin-bottom: 30px;
+    padding: 4px;
+    width: 220px;
+    height: 32px;
+    border: none; 
+    border-bottom: 1px solid #0082e6;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus{
+    border-bottom: 2px solid #3498db;
+    border-bottom-right-radius:13px;
+    color: #3498db;
+    transition: 0.2s ease;
+}
+
+.btn-secondary{
+    background-color: red;
+}
+
+.btn-secondary:hover{
+    background-color: rgb(216, 56, 56);
+}
+
+.btn-secondary:hover, .btn-primary:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+input[type="file"]{
+    display: none;
+}
+
+#photo{
+    box-sizing: border-box;
+    font-size: 20px;
+    background-color: #3498db;
+    color: white;
+    border: 1px solid #3498db;
+    padding: 2px 15px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+#photo:hover{
+    background-color: #5baee5;
+    color: black;
+}
+
+.flex{
+    display:block ;
+}
