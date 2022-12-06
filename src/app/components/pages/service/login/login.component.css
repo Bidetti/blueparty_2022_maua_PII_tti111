@@ -3,14 +3,36 @@
     background: #cecece;
 
     /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to left, #0044ffc7, #0044ffd8, #0044ffe5, #0044ffec);
+    background: -webkit-linear-gradient(to right, #85d9f8b6, #6DD5FA, #2980B9);
 
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to left, #0044ffc7, #0044ffd8, #0044ffe5, #0044ffec);
+    background: linear-gradient(to right, #85d9f8b6, #6DD5FA, #2980B9);
   }
 
 .cadastro-link {
   font-size: 1rem;
   line-height: 1.125rem;
   font-weight: 700;
+}
+
+
+.buttonForgotRequest {
+  background-color: #173aff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-align: center;
+  width: 40%;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.buttonForgotRequest:hover {
+  background-color: #0026ff;
+  box-shadow: 0 0 2px #0026ff;
 }

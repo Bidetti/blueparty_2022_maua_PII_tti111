@@ -10,6 +10,7 @@ import { CadastroComponent } from './components/pages/dashboard/cadastro/cadastr
 import { EventoComponent } from './components/pages/evento/evento.component';
 import { DashboardComponent } from './components/pages/dashboard/dashboard.component';
 import { PagamentoComponent } from './components/pages/pagamento/pagamento.component';
+import { ComprasComponent } from './components/pages/dashboard/compras/compras.component';
 
 const routes: Routes = [
   {
@@ -39,6 +40,10 @@ const routes: Routes = [
   {
     path: "dashboard/criar-evento",
     component: CadastroComponent
+  },
+  {
+    path: "dashboard/compras",
+    component: ComprasComponent
   },
   {
     path: "dashboard",

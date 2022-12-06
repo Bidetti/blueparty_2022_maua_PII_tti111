@@ -9,8 +9,20 @@
         <img src="/assets/img/person1.jpg" class="rounded-pill" alt="Website Logo">
         <h2 class="mt-1">Luís Felipe</h2>
         <hr class="border border-dark border-1 opacity-75 w-50 mt-0 mb-3">
-        <a *ngFor="let item of list_sidenav" [routerLink]="item.link" class="list-group-item list-group-item-action border-0" aria-current="true">
-          <i class="{{item.icon}}" aria-hidden="true"></i> <span class="item-text">{{item.name}}</span>
+        <a routerLink="/dashboard" class="list-group-item list-group-item-action border-0" aria-current="true">
+          <i class="fa fa-home" aria-hidden="true"></i> <span class="item-text">Início</span>
+        </a>
+        <a data-bs-target="#perfilModal" data-bs-toggle="modal" class="list-group-item list-group-item-action border-0" aria-current="true">
+          <i class="fa fa-user" aria-hidden="true"></i> <span class="item-text">Perfil</span>
+        </a>
+        <a routerLink="/dashboard/compras" class="list-group-item list-group-item-action border-0" aria-current="true">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i> <span class="item-text">Compras</span>
+        </a>
+        <a routerLink="/dashboard/criar-evento" class="list-group-item list-group-item-action border-0" aria-current="true">
+          <i class="fa fa-calendar" aria-hidden="true"></i> <span class="item-text">Criar Evento</span>
+        </a>
+        <a data-bs-target="#configModal" data-bs-toggle="modal" class="list-group-item list-group-item-action border-0" aria-current="true">
+          <i class="fa fa-cog" aria-hidden="true"></i> <span class="item-text">Configurações</span>
         </a>
         <a href="" class="list-group-item list-group-item-action border-0 mb-2" aria-current="true">
           <i class="fa fa-sign-out" aria-hidden="true"></i> <span class="item-text">Sair</span>
@@ -19,3 +31,126 @@
     </div>
   </div>
 </nav>
+<!-- Modal Perfil -->
+<div class="modal fade" id="perfilModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="perfilModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  <div class="modal-content">
+      <div class="modal-header">
+      <h1 class="modal-title fs-5" id="perfilModalLabel">Editar Perfil</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div class="container">
+          <div>
+              <img src="/assets/img/person1.jpg" alt="foto_perfil" class="rounded-pill mb-2">
+              <input type="file" name="" id="file" accept="image/*">
+              <label for="file" id="photo">Alterar Foto <i class="fa fa-plus-circle ms-2 pt-1" aria-hidden="true"></i>
+              </label>
+          </div>
+
+              <div>
+                  <div>
+                      <label for="togg-1">
+                          <span>Nome de Usuario:</span>
+                          <input type="text" class="togg-perfil" id="togg-1" placeholder="Luís Felipe">
+                      </label>
+                  </div>
+              </div>
+              <div>
+                  <div>
+                      <label for="togg-2">
+                          <span>Email:</span>
+                          <input type="email" class="togg-perfil" id="togg-2" placeholder="example@example.com">
+                      </label>
+                  </div>
+              </div>
+              <div>
+                  <div>
+                      <label for="togg-3">
+                          <span>Telefone:</span>
+                          <input type="text" class="togg-perfil" id="togg-3" placeholder="(11)91234-5678">
+                      </label>
+                  </div>
+              </div>
+              <div>
+                  <div>
+                      <label for="togg-4">
+                          <span>Data de Nascimento:</span>
+                          <input type="text" class="togg-perfil" id="togg-4" placeholder="00/00/0000">
+                      </label>
+                  </div>
+              </div>
+              <div>
+                  <span>Sexo:</span>
+                  <div>
+                      <label for="radio1" class="flex">
+                          <input type="radio" name="sex" id="radio1">
+                          <span class="ms-2">Masculino</span>
+                      </label>
+                  </div>
+                  <div>
+                      <label for="radio2" class="flex">
+                          <input type="radio" name="sex" id="radio2">
+                          <span class="ms-2">Feminino</span>
+                      </label>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+          <button type="button" class="agree" id="save" data-bs-dismiss="modal">Salvar Alterações</button>
+
+      </div>
+  </div>
+  </div>
+</div>
+<!-- Modal Config -->
+<div class="modal fade" id="configModal" tabindex="-1" aria-labelledby="configModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Configurações rápidas</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <div class="container" id="container_config">
+              <div>
+                  <div>
+                      <label for="togg-5" class="togg-label">
+                          <span>Notificações: </span>
+                          <input type="checkbox" id="togg-5" class="notification">
+                          <div class="toggle-container">
+                              <span class="toggle"></span>
+                              <span class="toggle-c"></span>
+                          </div>
+                      </label>
+                  </div>
+                  <div>
+                      <label for="togg-6" class="togg-label">
+                          <span>Novidades: </span>
+                          <input type="checkbox" id="togg-6">
+                          <div class="toggle-container">
+                              <span class="toggle"></span>
+                              <span class="toggle-c"></span>
+                          </div>
+                      </label>
+                  </div>
+                  <div>
+                      <label for="togg-7" class="togg-label">
+                          <span>Promoções: </span>
+                          <input type="checkbox" id="togg-7">
+                          <div class="toggle-container">
+                              <span class="toggle"></span>
+                              <span class="toggle-c"></span>
+                          </div>
+                      </label>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+          <button type="button" class="agree" data-bs-dismiss="modal">Salvar Alterações</button>
+      </div>
+  </div>
+  </div>
+</div>

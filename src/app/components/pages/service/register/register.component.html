@@ -65,16 +65,20 @@
           <div class="col-xl-10">
             <div class="card rounded-3 text-black">
               <div class="row g-0">
-                <div class="col-lg-7">
+                <div class="col-lg-6">
                   <div class="card-body p-md-5 mx-md-4">
 
                     <div class="text-center">
                       <img src="assets/img/logo/site/logo.gif"
                         style="width: 185px;" alt="logo">
-                      <h4 class="mt-1 mb-5 pb-1">Bem vindo ao BlueParty</h4>
+                      <h4 class="mt-1 mb-3 pb-1">Bem vindo ao BlueParty</h4>
                     </div>
 
                     <form>
+                      <div
+                        class="d-none alert alert-dismissible fade alert-register"
+                        role="alert">
+                      </div>
                       <h5 class="text-center mb-md-3">Registre-se sua conta</h5>
 
                       <div class="form-outline mb-md-2 mb-2">
@@ -92,7 +96,7 @@
                       </div>
 
                       <div class="d-grid gap-2 col-6 mx-auto mt-md-4 mt-3">
-                        <button class="btn btn-primary btn-lg mb-3" type="button" routerLink="/login" id="loginButton">Criar Conta</button>
+                        <button class="btn btn-primary btn-lg mb-3" type="button" id="cadastroButton" (click)="cadastrarUsuario()">Criar Conta</button>
                       </div>
 
                     </form>
@@ -101,8 +105,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-5 d-flex align-items-center gradient-custom-2 rounded">
-                  <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                <div class="col-lg-6 d-flex align-items-center gradient-custom-2 rounded">
+                  <div class="px-3 py-4 p-md-5 mx-md-4">
                     <h4 class="mb-4">Nossa Missão</h4>
                     <p>Acreditamos que uma das coisas mais preciosas que  podemos carregar conosco
                       durante nossas vidas são as experiêncais que criamos e com quem decidimos

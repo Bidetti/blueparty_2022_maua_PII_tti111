@@ -12,7 +12,4 @@ export class NavComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  changeTheme(): void {
-    console.log("teste")
-  }
 }

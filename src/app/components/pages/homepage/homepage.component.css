@@ -31,10 +31,10 @@
   border-radius: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   :host ::ng-deep .carousel-indicators button {
     margin-bottom: 245px;
-    background-color: black;
+    background-color: #ffee00;
   }
 }
 

@@ -1,10 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+// Modules
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+
+//Components
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { NavComponent } from './components/shared/nav/nav.component';
 import { HomePageComponent } from './components/pages/homepage/homepage.component';
@@ -15,11 +20,10 @@ import { RegisterComponent } from './components/pages/service/register/register.
 import { PageNotFoundComponent } from './components/pages/page-not-found/page-not-found.component';
 import { CadastroComponent } from './components/pages/dashboard/cadastro/cadastro.component';
 import { EventoComponent } from './components/pages/evento/evento.component';
-import { ReactiveFormsModule } from '@angular/forms';
 import { DashboardComponent } from './components/pages/dashboard/dashboard.component';
-import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { SidenavComponent } from './components/pages/dashboard/sidenav/sidenav.component';
 import { PagamentoComponent } from './components/pages/pagamento/pagamento.component';
+import { ComprasComponent } from './components/pages/dashboard/compras/compras.component';
 
 
 @NgModule({
@@ -37,7 +41,8 @@ import { PagamentoComponent } from './components/pages/pagamento/pagamento.compo
     EventoComponent,
     DashboardComponent,
     SidenavComponent,
-    PagamentoComponent
+    PagamentoComponent,
+    ComprasComponent
   ],
   imports: [
     BrowserModule,
