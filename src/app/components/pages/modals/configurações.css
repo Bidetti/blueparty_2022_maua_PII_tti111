@@ -3,9 +3,7 @@
     margin-left: 300px;
     margin-top: 300px;
 }
-h1{
-    text-align: center;
-}
+
 .container{
     display: flex;
     justify-content: center;
@@ -39,11 +37,17 @@ h1{
     border: 1px solid #8C8CA4;
 }
 
-input[type="checkbox"]{
+#togg-1, #togg-2{
     display: none;
 }
 
-input[type="checkbox"]:checked + div .toggle-c{
+#togg-1:checked + div .toggle-c{
+    left:30px;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+#togg-2:checked + div .toggle-c{
     left:30px;
     background-color: #0d6efd;
     border-color: #0d6efd;
@@ -55,11 +59,6 @@ input[type="checkbox"]:checked + div .toggle-c{
     align-items: center;
 }
 
-input[type="text"]{
+#togg-3{
     border-radius: 5px;
 }
-
-input[type="text"]:focus{
-    border-color: #0d6efd !important;
-}
-
