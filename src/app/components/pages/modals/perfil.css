@@ -9,13 +9,18 @@
 }
 
 #change{
-    
-    height:30px;
-    width: 15%;
-    margin-left:-3%;
+    position: absolute;
+    height:5.3%;
+    width: 5.3%;
+    padding: .7%;
+    margin-left:24%;
+    border-radius: 50%;
+    background-color: rgb(218, 216, 216);
+  
 }
 
-input[type="text"], input[type="email"]{
+
+#togg-1{
     display: block;
     box-sizing: border-box;
     background: none;
@@ -31,9 +36,9 @@ input[type="text"], input[type="email"]{
     transition: 0.2s ease;
 }
 
-input[type="text"]:focus, input[type="email"]:focus{
+#togg-1:focus{
     border-bottom: 2px solid #3498db;
-    border-bottom-right-radius:13px;
+    border-bottom-right-radius:19px;
     color: #3498db;
     transition: 0.2s ease;
 }
@@ -51,12 +56,15 @@ input[type="text"]:focus, input[type="email"]:focus{
     transition: 0.3s;
 }
 
-input[type="file"]{
+#file{
     display: none;
 }
 
 #photo{
+    display: flex;
+    width: 35%;
     box-sizing: border-box;
+    margin-bottom: 5%;
     font-size: 20px;
     background-color: #3498db;
     color: white;
@@ -71,6 +79,7 @@ input[type="file"]{
     color: black;
 }
 
-.flex{
-    display:block ;
+#photo:hover > img{
+    transform: scale(1.1);
+    transition: 0.3s;
 }
