@@ -21,9 +21,36 @@
           </ul>
 
       </ul>
-      <a routerLink="/carrinho-de-compras" class="me-2"><img id="carrinhoImage" src="assets/icons/cart.svg" alt="Carrinho de Compras" width="32" height="32">
+      <a data-bs-toggle="offcanvas" data-bs-target="#carrinhodecompras" class="me-2"><img id="carrinhoImage" src="assets/icons/cart.svg" alt="Carrinho de Compras" width="32" height="32">
       </a>
       <button class="btn btn-outline-primary me-2 ftw-bold" style="color: black; width: 50px; height: 40px;" routerLink="/login"><i class="fa fa-user" aria-hidden="true"></i></button>
     </div>
   </div>
 </nav>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="carrinhodecompras" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Carrinho</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="container">
+      <div class="column">
+        <div class="col-12 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Bixopada 22</h5>
+              <p class="card-text">2 Ingressos - Camarote <br><span class="me-4">Total: R$ 600,00 </span><button routerLink="pagamento" class="btn btn-primary fw-semibold text-uppercase ms-5"><i class="fa fa-credit-card-alt" aria-hidden="true"></i> Pagar</button></p>
+            </div>
+        </div>
+        </div>
+        <div class="col-12 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">DUODECK Party</h5>
+              <p class="card-text">1 Ingressos - Pista <br><span class="me-4">Total: R$ 75,00 </span><button routerLink="pagamento" class="btn btn-primary fw-semibold text-uppercase ms-5"><i class="fa fa-credit-card-alt" aria-hidden="true"></i> Pagar</button></p>
+            </div>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
