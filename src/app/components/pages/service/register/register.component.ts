@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-const baseUrl = 'http://localhost:3000/';
-const protocolo = 'http'
+import { Router,ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -8,16 +7,28 @@ const protocolo = 'http'
 })
 export class RegisterComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
   }
 
-  async cadastrarUsuario() {
-    const userCadastroInput = document.querySelector("#userField") as HTMLInputElement;
-    const passwordCadastroInput = document.querySelector("#passwordField") as HTMLInputElement;
-    const userCadastro = userCadastroInput.value;
-    const passwordCadastro = passwordCadastroInput.value;
+  exibirAlerta(seletor: any, conteudo: any, classesAAdicionar: any, classeARemover: any, timeout: number | undefined): void {
+    //exibir um alerta instruindo o usuário a preencher todos os campos
+    let alert = document.querySelector(seletor)
+    alert.innerHTML = conteudo
+    // alert.classList.add('show', 'alert-danger')
+    alert.classList.add(...classesAAdicionar)
+    alert.classList.remove(...classeARemover)
+    setTimeout(() => {
+      alert.classList.remove('show')
+      alert.classList.add('d-none')
+    }, timeout)
+  }
 
+  cadastrarUsuario(): void {
+    this.exibirAlerta('.alert-register', 'Cadastro realizado com sucesso!', ['show', 'alert-success'], ['d-none', 'alert-danger'], 2000)
+    setTimeout(() => {
+      this.router.navigate(['../login'], { relativeTo: this.route })
+    }, 2000)
   }
 }

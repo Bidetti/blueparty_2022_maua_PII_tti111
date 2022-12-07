@@ -2,14 +2,18 @@
   /* fallback for old browsers */
   background: #cecece;
 
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(to left, #0044ffc7, #0044ffd8, #0044ffe5, #0044ffec);
+   /* Chrome 10-25, Safari 5.1-6 */
+   background: -webkit-linear-gradient(to right, #85d9f8b6, #6DD5FA, #2980B9);
 
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to left, #0044ffc7, #0044ffd8, #0044ffe5, #0044ffec);
+   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   background: linear-gradient(to right, #85d9f8b6, #6DD5FA, #2980B9);
 }
 
 a {
+  cursor: pointer;
+}
+
+.login-to {
   font-size: 1rem;
   line-height: 1.125rem;
   font-weight: 700;

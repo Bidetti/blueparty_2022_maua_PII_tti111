@@ -38,8 +38,39 @@
                 <h4>{{ticket.name}}</h4>
                 <p>{{ticket.description}}</p>
                 <p>R$ {{ticket.price}}</p>
-                <p>Quantidade: {{ticket.quantity}} ingressos dispóniveis.</p>
-                <button class="btn btn-primary mb-3">Comprar</button>
+                <p>Quantidade: {{ticket.quantity}} ingressos disponíveis.</p>
+                <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" attr.data-bs-target="#{{ticket.name}}Modal">
+                  Comprar
+                </button>
+                <!--Modal-->
+                <div class="modal fade" id="{{ticket.name}}Modal" tabindex="-1" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Ingresso</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cancelar"></button>
+                      </div>
+                      <div class="modal-body text-start">
+                        <h4>Informações da Festa:</h4>
+                        <p>
+                          <strong>Festa: </strong>{{specificParty.title}}<br>
+                          <strong>Local: </strong>{{specificParty.localization.name}}<br>
+                          <strong>Data: </strong>{{dayOfWeekAsString(specificParty.date)}}, {{dayandMonthAsString(specificParty.date)}}<br>
+                        </p>
+                        <h4>Informações do Ingresso:</h4>
+                        <p>
+                          <strong>Ingresso: </strong>{{ticket.name}}<br>
+                          <strong>Preço: </strong>R$ {{ticket.price}}<br>
+                          <strong>Quantidade: </strong>{{ticket.quantity}} ingressos dispóniveis.<br>
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" routerLink="/pagamento">Comprar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
