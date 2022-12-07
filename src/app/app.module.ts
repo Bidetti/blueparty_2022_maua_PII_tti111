@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { NgChartsModule } from 'ng2-charts';
 
 //Components
 import { FooterComponent } from './components/shared/footer/footer.component';
@@ -51,6 +52,7 @@ import { ComprasComponent } from './components/pages/dashboard/compras/compras.c
     BrowserAnimationsModule,
     ReactiveFormsModule,
     CarouselModule,
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

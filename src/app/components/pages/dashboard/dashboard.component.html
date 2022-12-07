@@ -91,30 +91,43 @@
               </div>
           </div>
           <div class="row">
-            <div class="col-xl-4 col-lg-5">
+            <div class="col-12 col-xl-4 col-lg-5">
               <div class="card shadow mb-4">
                   <div
                       class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                       <h6 class="m-0 font-weight-bold text-primary">Eventos</h6>
                   </div>
-                  <div class="card-body">
-                      <div class="chart-pie pt-4 pb-2">
-                          <canvas id="myChart"> </canvas>
-                      </div>
-                      <div class="mt-4 text-center small">
-                          <span class="mr-2">
-                              <i class="fa fa-circle text-primary"></i> Universitários
-                          </span>
-                          <span class="mr-2">
-                              <i class="fa fa-circle text-success"></i> Bandas
-                          </span>
-                          <span class="mr-2">
-                              <i class="fa fa-circle text-info"></i> Talkshows
-                          </span>
+                  <div class="card-body d-flex justify-content-center">
+                      <div class="pt-2 pb-2">
+                        <canvas baseChart
+                          [labels]="eventChartChartLabels"
+                          [datasets]="eventChartChartDatasets"
+                          [options]="eventChartChartOptions"
+                          [legend]="true"
+                          [type]="'doughnut'">
+                        </canvas>
                       </div>
                   </div>
               </div>
             </div>
+            <div class="col-12 col-xl-8 col-lg-7">
+              <div class="card shadow mb-4">
+                  <div
+                      class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                      <h6 class="m-0 font-weight-bold text-primary">Visão geral dos ganhos</h6>
+                  </div>
+                  <div class="card-body d-flex justify-content-center">
+                      <div class="pt-2 pb-2">
+                        <canvas baseChart id="ganhosLineChart"
+                          [type]="'line'"
+                          [data]="ganhosLineChartData"
+                          [options]="ganhosLineChartOptions"
+                          [legend]="ganhosLineChartLegend">
+                        </canvas>
+                      </div>
+                  </div>
+              </div>
+          </div>
           </div>
         </div>
       </main>
